@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Transform groundCheck;
     public LayerMask whatIsGround;
+    public Animator animator;
 
     [Header("Ability Unlocks")]
     public bool canDoubleJump = false; // Check this ONLY when player gets the item!
@@ -69,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         horizontalMove = moveInput * CharacterSpeed;
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         // --- 3. Sprint Logic ---
         // Added 'canSprint' check here in case you want to unlock that too
@@ -76,12 +78,15 @@ public class PlayerMovement : MonoBehaviour
         {
             isSprinting = true;
             CharacterSpeed = 60f;
+            animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
         }
         else
         {
             isSprinting = false;
             CharacterSpeed = defaultSpeed;
         }
+
+        
 
         // --- 4. Jump & Double Jump Logic ---
         if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
