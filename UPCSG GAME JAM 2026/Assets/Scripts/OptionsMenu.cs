@@ -18,15 +18,18 @@ public class OptionsMenu : MonoBehaviour
 
         resolutionDropdown.ClearOptions();
 
+        // Makes a list for string
         List<string> options = new List<string>();
 
         int currentResolutionIndex = 0;
 
+        // loops through all resolutions from the screen, and adds them to the resolutionDropdown options, while also turning it into a string before adding them to it.
         for(int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + " x " + resolutions[i].height;
             options.Add(option);
 
+            // finds current resolution of the monitor and sets it as the current resolution
             if (resolutions[i].width == Screen.currentResolution.width && 
                 resolutions[i].height == Screen.currentResolution.height)
             {
@@ -35,7 +38,7 @@ public class OptionsMenu : MonoBehaviour
         }
 
         resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentResolutionIndex;
+        resolutionDropdown.SetValueWithoutNotify(currentResolutionIndex);
         resolutionDropdown.RefreshShownValue();
     }
 
