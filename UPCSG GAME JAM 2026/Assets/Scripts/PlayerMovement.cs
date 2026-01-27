@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask whatIsGround;
     public Animator animator;
+    public GameObject DashUI;
+    public GameObject DoubleJumpUI;
 
     [Header("Ability Unlocks")]
     public bool canDoubleJump = false; // Check this ONLY when player gets the item!
@@ -49,6 +51,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+
+        UpdateDashUI();
+        UpdateDoubleJump();
         // --- 1. Ground Check ---
         bool wasGrounded = isGrounded;
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, whatIsGround);
@@ -86,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
             CharacterSpeed = defaultSpeed;
         }
 
-        
+
 
         // --- 4. Jump & Double Jump Logic ---
         if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
@@ -110,14 +115,19 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+
     }
 
     private void FixedUpdate()
     {
+        
+
+
         if (isDashing) return;
 
         if (doDoubleJump)
         {
+            
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
             rb.AddForce(Vector2.up * doubleJumpForce, ForceMode2D.Impulse);
             doDoubleJump = false;
@@ -150,5 +160,29 @@ public class PlayerMovement : MonoBehaviour
 
         yield return new WaitForSeconds(dashCooldown);
         dashReady = true;
+    }
+
+    public void UpdateDashUI()
+    {
+        if(dashReady)
+        {
+            DashUI.SetActive(true);
+        }
+        else
+        {
+            DashUI.SetActive(false);
+        }
+    }
+
+    public void UpdateDoubleJump()
+    {
+        if (extraJumps > 0)
+        {
+            DoubleJumpUI.SetActive(true);
+        }
+        else
+        {
+            DoubleJumpUI.SetActive(false);
+        }
     }
 }
