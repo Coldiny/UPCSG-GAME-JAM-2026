@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     public int Edamage; 
     public float jumpForce;
     public float detectionRange = 8f;
+    public float attackRange = 1.6f;
 
 
     private bool isGrounded; 
@@ -25,15 +26,35 @@ public class Enemy : MonoBehaviour
 
     private bool isChasing = false;
 
+    [Header("Visual Feedback")]
+    private SpriteRenderer spriteRenderer;
+    public Color normalColor = Color.red;
+    public Color attackColor = Color.white;
+    public float normalAlpha = 1f;
+    public float attackAlpha = 0.5f;
+    public float colorLerpSpeed = 6f;
+
     [Header("Patrol Settings")]
     public Transform patrolPointA; // left / right patrol points
     public Transform patrolPointB;
     private Transform currentTarget; // To switch between patrol and player
 
+    [Header("Enemy AI")]
+    public EnemyState currentState;
+
+    public enum EnemyState
+    {
+        Patrol,
+        Chase,
+        Attack
+    }
+
     private void Start() 
     { 
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.color = normalColor;
         currentTarget = patrolPointB; // 1st patrol target
     }
     void Update()
@@ -41,6 +62,31 @@ public class Enemy : MonoBehaviour
         // Determine the distance between enemy and player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         isChasing = distanceToPlayer <= detectionRange;
+
+        // Decide state
+        if(distanceToPlayer <= attackRange)
+        {
+            currentState = EnemyState.Attack;
+        } else if(distanceToPlayer <= detectionRange)
+        {
+            currentState = EnemyState.Chase;
+        } else
+        {
+            currentState = EnemyState.Patrol;
+        }
+
+        // Change color and alpha depending on state
+        Color targetColor;
+        if (currentState == EnemyState.Attack)
+        {
+            targetColor = attackColor;
+            targetColor.a = attackAlpha;
+        } else
+        {
+            targetColor = normalColor;
+            targetColor.a = normalAlpha;
+        }
+        spriteRenderer.color = Color.Lerp(spriteRenderer.color, targetColor, Time.deltaTime * colorLerpSpeed);
 
         // Decide target
         Transform target = isChasing ? player : currentTarget;
@@ -119,7 +165,12 @@ public class Enemy : MonoBehaviour
             horizontalVelocity = 0f; // we stop before jumping over wall :D
         }
 
-        rb.linearVelocity = new Vector2(horizontalVelocity, rb.linearVelocity.y);
+        // No moving when attacking
+        if(currentState != EnemyState.Attack)
+        {
+            rb.linearVelocity = new Vector2(horizontalVelocity, rb.linearVelocity.y);
+        }
+        
 
         // JUMP GOOOO
         if (isGrounded && shouldJump && Time.time >= nextJumpTime) 
@@ -175,6 +226,9 @@ public class Enemy : MonoBehaviour
     public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+
+        Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 }
