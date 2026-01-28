@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
+    [Header("References")]
     public AudioMixer audioMixer;
-
     public TMPro.TMP_Dropdown resolutionDropdown;
 
+    // variables
     Resolution[] resolutions;
 
     void Start()

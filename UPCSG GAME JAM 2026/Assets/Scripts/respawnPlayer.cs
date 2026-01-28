@@ -5,8 +5,13 @@ using UnityEngine;
 
 public class respawnPlayer : MonoBehaviour
 {
+    [Header("References")]
     public GameObject spawnPoint;
     public GameObject Player;
+    public PlayerHealth playerHealth;
+
+    // variables
+    int damage = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,6 +30,7 @@ public class respawnPlayer : MonoBehaviour
         {
             Rigidbody2D rb = Player.GetComponent<Rigidbody2D>();
             rb.linearVelocity = Vector2.zero;
+            playerHealth.PlayerTakeDamage(damage);
             Player.transform.position = spawnPoint.transform.position;
         }
     }

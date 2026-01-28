@@ -4,18 +4,20 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
-
+    [Header("References")]
     public TextMeshProUGUI routeText;
+    public GameObject gameOverUI;
 
-    public void Setup(/*variable*/)
+    public void Setup(string routeTaken) // variable is the route taken
     {
-        gameObject.SetActive(true);
+        gameOverUI.SetActive(true);
         routeText.text = "ROUTE: "; /* + variable*/
     }
 
-    public void TryAgainButton()
+    public void TryAgainButton() // This restarts entire game, cause game over
     {
-        SceneManager.LoadScene("Tutorial Area Template"); // change to (TutorialArea) when renamed later
+
+        SceneManager.LoadScene("TutorialAreaTemplate"); // change to (TutorialArea) when renamed later
     }
 
     public void MainMenuButton()

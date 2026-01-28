@@ -9,11 +9,17 @@ public class PlayerHealth : MonoBehaviour
 {
     [Header("References")]
     public Rigidbody2D rb;
-
+    GameManager gameManager;
     public GameObject[] hearts;
 
     [Header("Settings")]
     public int health;
+
+
+    private void Awake()
+    {
+        gameManager = FindFirstObjectByType<GameManager>();
+    }
     private void Start()
     {
         // Ensure UI is correct at start
@@ -57,7 +63,7 @@ public class PlayerHealth : MonoBehaviour
 
             Debug.Log("Player is dead.");
             gameObject.SetActive(false);
-
+            gameManager.PlayerHasDied();
         }
 
     }
