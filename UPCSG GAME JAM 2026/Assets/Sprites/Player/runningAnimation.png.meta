@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 36ceb47bf200f0846865dc63037990ad
+guid: b343b514764015a4695993e2297f0062
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7896281735413620878
-    second: playerSprite_0
+      213: -863259242132942527
+    second: running_scratchsprite-Sheet_0
   - first:
-      213: 4214452682036070143
-    second: playerSprite_1
+      213: 6069395712437002668
+    second: running_scratchsprite-Sheet_1
   - first:
-      213: 6707464328325396904
-    second: playerSprite_2
+      213: -2910091362467637826
+    second: running_scratchsprite-Sheet_2
   - first:
-      213: -6646785486133963012
-    second: playerSprite_3
+      213: -9091960444039072618
+    second: running_scratchsprite-Sheet_3
   - first:
-      213: 7079147233807534215
-    second: playerSprite_4
+      213: 7218668675294526218
+    second: running_scratchsprite-Sheet_4
   - first:
-      213: 9203835802740118276
-    second: playerSprite_5
+      213: 8388269364886209071
+    second: running_scratchsprite-Sheet_5
   - first:
-      213: 1903030100871761730
-    second: playerSprite_6
+      213: -4227014644403986299
+    second: running_scratchsprite-Sheet_6
   - first:
-      213: 6646376060719561138
-    second: playerSprite_7
+      213: 7726926221095116737
+    second: running_scratchsprite-Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,181 +117,194 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idleAnimation_0
+      name: running_scratchsprite-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 32
+        width: 22
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 34cbfcaaaadde3542acf7282318ea1ab
-      internalID: -2132811812
+      spriteID: 141d7930b461504f0800000000000000
+      internalID: -863259242132942527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_1
+      name: running_scratchsprite-Sheet_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 24
         y: 0
-        width: 16
-        height: 32
+        width: 18
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ff678a049258b1c4e897a6a59da06ec1
-      internalID: -1645216843
+      spriteID: ca126115e33da3450800000000000000
+      internalID: 6069395712437002668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_2
+      name: running_scratchsprite-Sheet_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 46
         y: 0
-        width: 16
-        height: 32
+        width: 18
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ec03fe2c57769c745a35fd18d9553b7f
-      internalID: 1676256135
+      spriteID: eb51f2cf2574d97d0800000000000000
+      internalID: -2910091362467637826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_3
+      name: running_scratchsprite-Sheet_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 69
         y: 0
-        width: 16
-        height: 32
+        width: 17
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: acf84af3db6fd8048bb6a9b8eb3a41f3
-      internalID: 1123142513
+      spriteID: 694f52db52ed2d180800000000000000
+      internalID: -9091960444039072618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_4
+      name: running_scratchsprite-Sheet_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 90
         y: 0
-        width: 16
-        height: 32
+        width: 21
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bfa3d92bfb45495448f831b2591f0c8f
-      internalID: 320688545
+      spriteID: a0b7b2ef9ecdd2460800000000000000
+      internalID: 7218668675294526218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_5
+      name: running_scratchsprite-Sheet_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 111
         y: 0
-        width: 16
-        height: 32
+        width: 19
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a9f23a563a787074bb45a70291921ee5
-      internalID: -1221001769
+      spriteID: f22855e5b8e196470800000000000000
+      internalID: 8388269364886209071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_6
+      name: running_scratchsprite-Sheet_6
       rect:
         serializedVersion: 2
-        x: 96
+        x: 134
         y: 0
-        width: 16
-        height: 32
+        width: 18
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 287983d986dc53f40b58fc406272e679
-      internalID: -1328238700
+      spriteID: 5802deb9390a655c0800000000000000
+      internalID: -4227014644403986299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_7
+      name: running_scratchsprite-Sheet_7
       rect:
         serializedVersion: 2
-        x: 112
+        x: 158
         y: 0
         width: 16
-        height: 32
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0d928d36d5fbe51409947ac396ae69fc
-      internalID: 1700724172
+      spriteID: 1cf9606857e8b3b60800000000000000
+      internalID: 7726926221095116737
       vertices: []
       indices: 
       edges: []
@@ -300,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9be8929267ca6b149aea9995206b7f55
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -308,18 +321,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      idleAnimation_0: -2132811812
-      idleAnimation_1: -1645216843
-      idleAnimation_2: 1676256135
-      idleAnimation_3: 1123142513
-      idleAnimation_4: 320688545
-      idleAnimation_5: -1221001769
-      idleAnimation_6: -1328238700
-      idleAnimation_7: 1700724172
+      running_scratchsprite-Sheet_0: -863259242132942527
+      running_scratchsprite-Sheet_1: 6069395712437002668
+      running_scratchsprite-Sheet_2: -2910091362467637826
+      running_scratchsprite-Sheet_3: -9091960444039072618
+      running_scratchsprite-Sheet_4: 7218668675294526218
+      running_scratchsprite-Sheet_5: 8388269364886209071
+      running_scratchsprite-Sheet_6: -4227014644403986299
+      running_scratchsprite-Sheet_7: 7726926221095116737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

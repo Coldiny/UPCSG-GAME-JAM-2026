@@ -6,6 +6,10 @@ public class PlayerAttack : MonoBehaviour
     [Header("References")]
     public Transform attackPos;
 
+    [Header("Abilities")]
+    public bool canMAttack = false;
+    public bool canRAttack = false;
+
     [Header("Settings")]
     public float startTimeBtwAttack;
     public float attackRange;
@@ -16,11 +20,11 @@ public class PlayerAttack : MonoBehaviour
 
     public void Update()
     {
-        if (timeBtwAttack <= 0)
+        if (timeBtwAttack <= 0 && canMAttack)
         {
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
             {
-                Attack();
+                MAttack();
             }
         }
         else
@@ -29,7 +33,7 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    void Attack()
+    void MAttack()
     {
 
         Debug.Log("Attack!");
