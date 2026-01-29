@@ -51,6 +51,7 @@ public class Enemy : MonoBehaviour, IAttackable
     public float knockbackUpForce = 2f;
     public float knockbackDuration = 0.2f;
     private float knockbackTimer = 0f;
+    public bool canTakeKnockback = true;
 
     public enum EnemyState
     {
@@ -229,7 +230,7 @@ public class Enemy : MonoBehaviour, IAttackable
             Die();
         }
 
-        if(player != null)
+        if(player != null && canTakeKnockback)
         {
             float dir = Mathf.Sign(transform.position.x - player.position.x); // this is pushing away from player
 
