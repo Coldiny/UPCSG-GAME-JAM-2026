@@ -628,7 +628,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.82, y: -0.27, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1202,9 +1202,10 @@ MonoBehaviour:
   bossArmsHP: {fileID: 1630820918}
   leftArm: {fileID: 843642607}
   rightArm: {fileID: 1715418928}
+  contactDamage: 1
   maxHealth: 20
   currentHealth: 0
-  armShieldHP: 2
+  maxArmHP: 20
 --- !u!212 &674069073
 SpriteRenderer:
   serializedVersion: 2
@@ -1315,7 +1316,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.02618888}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1325,7 +1326,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.75, y: 1.40625}
+  m_Size: {x: 0.5143791, y: 1.3122163}
   m_EdgeRadius: 0
 --- !u!1 &751138821
 GameObject:
@@ -2937,6 +2938,11 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &1679731711 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5096226714260270630, guid: 371dc58816ad1904dad4e7f8656866d7, type: 3}
+  m_PrefabInstance: {fileID: 5143942427105229245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1713048336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3660,6 +3666,18 @@ PrefabInstance:
       value: PlayerCamera
       objectReference: {fileID: 0}
     - target: {fileID: 7440953093273718543, guid: 87ec2764ed3d3c04f94d235898b9b8cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440953093273718543, guid: 87ec2764ed3d3c04f94d235898b9b8cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440953093273718543, guid: 87ec2764ed3d3c04f94d235898b9b8cc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440953093273718543, guid: 87ec2764ed3d3c04f94d235898b9b8cc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.82
       objectReference: {fileID: 0}
@@ -3697,6 +3715,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7440953093273718543, guid: 87ec2764ed3d3c04f94d235898b9b8cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440953093273718543, guid: 87ec2764ed3d3c04f94d235898b9b8cc, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4004,6 +4026,10 @@ PrefabInstance:
       value: 247
       objectReference: {fileID: 0}
     - target: {fileID: 37073232894898757, guid: 371dc58816ad1904dad4e7f8656866d7, type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 1679731711}
+    - target: {fileID: 37073232894898757, guid: 371dc58816ad1904dad4e7f8656866d7, type: 3}
       propertyPath: canMAttack
       value: 1
       objectReference: {fileID: 0}
@@ -4019,6 +4045,10 @@ PrefabInstance:
       propertyPath: damageAmount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 37073232894898757, guid: 371dc58816ad1904dad4e7f8656866d7, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 6655367405641605981, guid: 17bc528151ad23743b572f604143dc19, type: 3}
     - target: {fileID: 37073232894898757, guid: 371dc58816ad1904dad4e7f8656866d7, type: 3}
       propertyPath: startTimeBtwAttack
       value: 0.3
