@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyChargeAttack : MonoBehaviour
@@ -10,10 +11,13 @@ public class EnemyChargeAttack : MonoBehaviour
     public float chargeMoveSpeed = 12f;
     public float chargeDuration;
     public float chargeCooldown = 2f;
+    public float windUpTime = 0.25f;
 
     float chargeTimer;
-    float nextChargeTime;
     bool isCharging;
+    float nextChargeTime;
+    public bool isAttacking { get; private set; }
+    
 
     float chargeDirection;
 
@@ -23,44 +27,97 @@ public class EnemyChargeAttack : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    public void TryCharge()
     {
-        if(enemy.currentState != Enemy.EnemyState.Attack)
+        if(isAttacking)
         {
-            isCharging = false;
             return;
         }
 
-        if(!isCharging && Time.time >= nextChargeTime)
+        if(Time.time < nextChargeTime)
         {
-            StartCharge();
+            return;
         }
 
-        if(isCharging)
+        if(enemy.currentState != Enemy.EnemyState.Attack)
         {
-            chargeTimer -= Time.deltaTime;
-            
-
-            if(chargeTimer <= 0f)
-            {
-                rb.linearVelocity = new Vector2(chargeDirection * chargeMoveSpeed, rb.linearVelocity.y);
-                StopCharge();
-            }
+            return;
         }
+
+        StartCoroutine(ChargeRoutine());
     }
 
-    void StartCharge()
+    private IEnumerator ChargeRoutine()
     {
-        isCharging = true;
-        chargeTimer = chargeDuration;
+        isAttacking = true;
         nextChargeTime = Time.time + chargeCooldown;
 
-        // this locks the charging direction, so the enemy doesnt just change directions mid charge
+        // NO CHANGING DIRECTIONS WHILE CHARGGINNNG
         chargeDirection = Mathf.Sign(enemy.player.position.x - transform.position.x);
+
+        // WIND IT UP
+        yield return new WaitForSeconds(windUpTime);
+
+        float timer = chargeDuration;
+
+        
+
+        if (isAttacking)
+        {
+            timer -= Time.deltaTime;
+
+            // if charging done, GO CHARGE
+            if(timer <= 0f)
+            {
+                rb.linearVelocity = new Vector2(chargeDirection * chargeMoveSpeed, rb.linearVelocity.y);
+                yield return new WaitForSeconds(0.2f);
+                isAttacking = false;
+            }
+            
+            
+            
+        }
+
+        
     }
 
-    void StopCharge()
-    {
-        isCharging = false;
-    }
+    //void Update()
+    //{
+    //    if(enemy.currentState != Enemy.EnemyState.Attack)
+    //    {
+    //        isCharging = false;
+    //        return;
+    //    }
+
+    //    if(!isCharging && Time.time >= nextChargeTime)
+    //    {
+    //        StartCharge();
+    //    }
+
+    //    if(isCharging)
+    //    {
+    //        chargeTimer -= Time.deltaTime;
+            
+    //        if(chargeTimer <= 0f)
+    //        {
+    //            rb.linearVelocity = new Vector2(chargeDirection * chargeMoveSpeed, rb.linearVelocity.y);
+    //            StopCharge();
+    //        }
+    //    }
+    //}
+
+    //void StartCharge()
+    //{
+    //    isCharging = true;
+    //    chargeTimer = chargeDuration;
+    //    nextChargeTime = Time.time + chargeCooldown;
+
+    //    // this locks the charging direction, so the enemy doesnt just change directions mid charge
+    //    chargeDirection = Mathf.Sign(enemy.player.position.x - transform.position.x);
+    //}
+
+    //void StopCharge()
+    //{
+    //    isCharging = false;
+    //}
 }

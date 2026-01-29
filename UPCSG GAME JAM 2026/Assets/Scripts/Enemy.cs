@@ -16,9 +16,10 @@ public class Enemy : MonoBehaviour
     public float jumpForce;
     public float detectionRange = 8f;
     public float attackRange = 1.6f;
+    public float attackExitRange = 2.2f;
 
-
-    private bool isGrounded; 
+    public bool isGrounded; 
+    
     private bool shouldJump;
     private bool wallAhead;
     private float jumpCooldown = 1f; // seconds between jumps
@@ -63,17 +64,31 @@ public class Enemy : MonoBehaviour
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         isChasing = distanceToPlayer <= detectionRange;
 
+        // Adding a bit extra range for attack, so that exiting attack range wont immediately stop attack state
         // Decide state
-        if(distanceToPlayer <= attackRange)
+        if(currentState == EnemyState.Attack)
         {
-            currentState = EnemyState.Attack;
-        } else if(distanceToPlayer <= detectionRange)
-        {
-            currentState = EnemyState.Chase;
+            if(distanceToPlayer > attackExitRange)
+            {
+                currentState = EnemyState.Chase;
+            }
         } else
         {
-            currentState = EnemyState.Patrol;
+            if(distanceToPlayer <= attackRange)
+            {
+                currentState = EnemyState.Attack;
+            }
+            else if (distanceToPlayer <= detectionRange)
+            {
+                currentState = EnemyState.Chase;
+            }
+            else
+            {
+                currentState = EnemyState.Patrol;
+            }
         }
+
+        
 
         // Change color and alpha depending on state
         Color targetColor;
@@ -172,8 +187,8 @@ public class Enemy : MonoBehaviour
         }
         
 
-        // JUMP GOOOO
-        if (isGrounded && shouldJump && Time.time >= nextJumpTime) 
+        // JUMP GOOOO, PLUS ULTRA
+        if (currentState != EnemyState.Attack && isGrounded && shouldJump && Time.time >= nextJumpTime) 
         {
             nextJumpTime = Time.time + jumpCooldown;
 
