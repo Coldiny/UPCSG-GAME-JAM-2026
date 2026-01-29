@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Ability Unlocks")]
     public bool canDoubleJump = false; // Check this ONLY when player gets the item!
+    public bool canDash = false;        // Option to unlock dashing later too
     public bool canSprint = true;      // Option to unlock sprinting later too
 
     [Header("Movement Settings")]
@@ -111,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
         // --- 5. Dash Logic ---
         if (isDashing) return;
 
-        if (Keyboard.current != null && Keyboard.current.qKey.wasPressedThisFrame && dashReady)
+        if (Keyboard.current != null && Keyboard.current.qKey.wasPressedThisFrame && dashReady && canDash)
         {
             StartCoroutine(Dash());
         }
@@ -164,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void UpdateDashUI()
     {
-        if(dashReady)
+        if(dashReady && canDash)
         {
             DashUI.SetActive(true);
         }
@@ -176,7 +177,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void UpdateDoubleJump()
     {
-        if (extraJumps > 0)
+        if (extraJumps > 0 && canDoubleJump)
         {
             DoubleJumpUI.SetActive(true);
         }

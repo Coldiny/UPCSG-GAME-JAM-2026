@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ad21a57087f7c44bbd22bb14ba5ead, type: 3}
+  m_Name: New Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Main Guide
+  npcPortrait: {fileID: -661431135059758820, guid: 3c6a6dc53b531824ebcb9e5ccfe4bc89, type: 3}
+  typingSpeed: 0.025
+  nodes:
+  - npcText: Hello, EF-1, it seems you have finally awoken.
+    defaultNextNode: 1
+    choices: []
+  - npcText: Any questions in mind? Feel free to ask
+    defaultNextNode: 0
+    choices:
+    - buttonText: Where am I?
+      nextNodeID: 4
+    - buttonText: Who are you?
+      nextNodeID: 3
+    - buttonText: Efwan..? What is that?
+      nextNodeID: 2
+    - buttonText: What should I be doing?
+      nextNodeID: 5
+  - npcText: ' It''s who you are, an experimental artificial human created from an
+      Ember Stone.'
+    defaultNextNode: 6
+    choices: []
+  - npcText: I am the Guide, and I'll help teach you how to survive in this world,
+      and all that I know about it.
+    defaultNextNode: 1
+    choices: []
+  - npcText: You are in the tutorial area. Duh.
+    defaultNextNode: 1
+    choices: []
+  - npcText: You need to kill the Sentient Automatons to consume their radiance and
+      gain more power, while also gathering their materials for more defense.
+    defaultNextNode: 1
+    choices: []
+  - npcText: You have the ability to consume radiance emitted by Sentient Automatons
+      once killed and use their parts to become apart of them.
+    defaultNextNode: 0
+    choices:
+    - buttonText: 
+      nextNodeID: 6
+    - buttonText: 
+      nextNodeID: 6
+    - buttonText: 
+      nextNodeID: 6
+    - buttonText: What are Ember Stones?
+      nextNodeID: 7
+  - npcText: An Ember Stone is a rare mineral discovered at the highest peak in the
+      world
+    defaultNextNode: 8
+    choices: []
+  - npcText: "Ember Stones were initially seen as humanity\u2019s pathway to survival
+      against an ever-growing cold climate. Unfortunately, only a few were successfully
+      extracted or salvaged, turning this potential lifeline into a short-term solution
+      rather than a permanent one."
+    defaultNextNode: 1
+    choices: []
