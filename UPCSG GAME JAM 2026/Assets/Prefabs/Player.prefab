@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 735628792444258236}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.68, z: 0}
+  m_LocalPosition: {x: 0, y: 0.997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -511,10 +511,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   attackPos: {fileID: 4851228256665968013}
   canMAttack: 0
-  canRAttack: 0
-  projectilePrefab: {fileID: 0}
-  projectileSpeed: 10
-  firePoint: {fileID: 4851228256665968013}
   startTimeBtwAttack: 0
   attackRange: 0.1
   damageAmount: 0

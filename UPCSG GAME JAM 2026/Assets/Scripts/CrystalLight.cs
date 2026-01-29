@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-public class CrystalLight : MonoBehaviour
+public class CrystalLight : MonoBehaviour, IAttackable
 {
     [Header("references")]
     public GameObject lightZone;
@@ -23,7 +23,13 @@ public class CrystalLight : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         light2D = GetComponent<Light2D>();
-        light2D.intensity = 0f;
+
+        if(light2D != null)
+        {
+            light2D.intensity = lightIntensityOff;
+        }
+        
+        
         sr.color = inactiveColor;
 
         if(lightZone != null)
@@ -37,19 +43,25 @@ public class CrystalLight : MonoBehaviour
     {
         if(isLit && Time.time >= lightEndTime)
         {
+            Debug.Log("Crystal was hit");
             TurnOff();
         }
     }
 
     // Player bonk the crystal TO LIGHT IT
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnHit(int damage)
     {
-        if (collision.gameObject.CompareTag("PlayerAttack"))
-        {
-            Debug.Log("Hit crystal");
-            LightUp();
-        }
+        LightUp();
     }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("PlayerAttack"))
+    //    {
+    //        Debug.Log("Hit crystal");
+    //        LightUp();
+    //    }
+    //}
 
     void LightUp()
     {

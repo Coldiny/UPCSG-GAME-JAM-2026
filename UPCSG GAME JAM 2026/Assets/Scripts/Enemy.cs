@@ -1,7 +1,7 @@
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using static System.Net.WebRequestMethods;
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IAttackable
 {
     [Header("References")] 
     private Rigidbody2D rb;
@@ -43,11 +43,25 @@ public class Enemy : MonoBehaviour
     [Header("Enemy AI")]
     public EnemyState currentState;
 
+    [Header("Movement Options")]
+    public bool useDefaultMovement = true;
+
+    [Header("Knockback Settings")]
+    public float knockbackForce = 5f;
+    public float knockbackUpForce = 2f;
+    public float knockbackDuration = 0.2f;
+    private float knockbackTimer = 0f;
+
     public enum EnemyState
     {
         Patrol,
         Chase,
         Attack
+    }
+
+    public void OnHit(int damage)
+    {
+        TakeDamage(damage);
     }
 
     private void Start() 
@@ -171,22 +185,27 @@ public class Enemy : MonoBehaviour
         // Target Direction
         float direction = Mathf.Sign(target.position.x - transform.position.x);
 
-        // Chase player
-        float horizontalVelocity = direction * speed;
-
-        // Stop if grounded and wall ahead
-        if (isGrounded && wallAhead)
+        if (knockbackTimer > 0f)
         {
-            horizontalVelocity = 0f; // we stop before jumping over wall :D
+            knockbackTimer -= Time.fixedDeltaTime;
         }
 
         // No moving when attacking
-        if(currentState != EnemyState.Attack)
+        if(currentState != EnemyState.Attack && useDefaultMovement && knockbackTimer <= 0f)
         {
+            // Chase player
+            float horizontalVelocity = direction * speed;
+
+            // Stop if grounded and wall ahead
+            if (isGrounded && wallAhead)
+            {
+                horizontalVelocity = 0f; // we stop before jumping over wall :D
+            }
+
+            Debug.Log(useDefaultMovement);
             rb.linearVelocity = new Vector2(horizontalVelocity, rb.linearVelocity.y);
         }
         
-
         // JUMP GOOOO, PLUS ULTRA
         if (currentState != EnemyState.Attack && isGrounded && shouldJump && Time.time >= nextJumpTime) 
         {
@@ -208,6 +227,14 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Die();
+        }
+
+        if(player != null)
+        {
+            float dir = Mathf.Sign(transform.position.x - player.position.x); // this is pushing away from player
+
+            rb.linearVelocity = new Vector2(dir * knockbackForce, knockbackUpForce);
+            knockbackTimer = knockbackDuration;
         }
     }
 
@@ -238,10 +265,25 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    // for outside forces to get the patrol target location, like Mr. Frog
+    public Transform GetCurrentPatrolTarget()
+    {
+        return currentTarget;
+    }
+
+    // to switch patrol outside
+    public void SwitchPatrolTarget()
+    {
+        currentTarget = currentTarget == patrolPointA ? patrolPointB : patrolPointA;
+    }
+
     public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, attackExitRange);
 
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detectionRange);

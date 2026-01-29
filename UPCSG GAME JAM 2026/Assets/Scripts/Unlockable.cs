@@ -71,10 +71,6 @@ public class Unlockable : MonoBehaviour, IInteractable
             case abilityType.MeleeAttack:
                 if (playerA != null) playerA.canMAttack = true;
                 break;
-
-            case abilityType.RangedAttack:
-                if (playerA != null) playerA.canRAttack = true;
-                break;
         }
         
         isUnlocked = true;

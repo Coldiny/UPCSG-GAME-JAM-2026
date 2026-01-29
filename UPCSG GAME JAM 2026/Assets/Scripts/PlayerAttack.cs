@@ -47,18 +47,18 @@ public class PlayerAttack : MonoBehaviour
 
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
-            Collider2D hitEnemy = enemiesToDamage[i];
+            Collider2D hit = enemiesToDamage[i];
 
             // --- CHECK 1: Normal Enemy ---
-            Enemy enemyScript = hitEnemy.GetComponent<Enemy>();
-            if (enemyScript != null)
+            IAttackable attackable = hit.GetComponent<IAttackable>();
+            if (attackable != null)
             {
-                enemyScript.TakeDamage(damageAmount);
+                attackable.OnHit(damageAmount);
             }
 
             // --- CHECK 2: Boss Body (Direct Hit) ---
             // This works if you hit the main red square
-            BossController bossBody = hitEnemy.GetComponent<BossController>();
+            BossController bossBody = hit.GetComponent<BossController>();
             if (bossBody != null)
             {
                 bossBody.TakeDamage(damageAmount);
@@ -67,7 +67,7 @@ public class PlayerAttack : MonoBehaviour
 
             // --- CHECK 3: Boss Arm (Arm Hit) ---
             // This works if you hit the blue squares
-            BossArm bossArm = hitEnemy.GetComponent<BossArm>();
+            BossArm bossArm = hit.GetComponent<BossArm>();
             if (bossArm != null)
             {
                 // We hit an arm! Now we need to find the Brain (BossController) 
