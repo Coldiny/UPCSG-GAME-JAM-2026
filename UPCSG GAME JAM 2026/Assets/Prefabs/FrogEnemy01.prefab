@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3377267925168393867}
+  - component: {fileID: 6409011113008778248}
   - component: {fileID: 2353319233419163291}
   - component: {fileID: 770818146091083534}
   - component: {fileID: 9023108120478075861}
@@ -17,7 +18,7 @@ GameObject:
   - component: {fileID: 3733201784443948806}
   m_Layer: 7
   m_Name: FrogEnemy01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,6 +39,28 @@ Transform:
   - {fileID: 8376851092869265118}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6409011113008778248
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4950952471812390284}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c0571ccf447d27e4c8cb5ea6f9728d60, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &2353319233419163291
 SpriteRenderer:
   serializedVersion: 2
@@ -87,9 +110,9 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.990566, g: 0, b: 0, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: -6366999185330799909, guid: 6ebf53a65a3cc6748a0621dd924e4d9f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -132,7 +155,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.48236585
 --- !u!50 &9023108120478075861
 Rigidbody2D:
   serializedVersion: 5
@@ -176,16 +199,16 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  anim: {fileID: 0}
   health: 5
   speed: 2
   Edamage: 1
-  jumpForce: 10
   detectionRange: 6
-  attackRange: 1.6
-  attackExitRange: 3.5
+  attackRange: 2
+  attackExitRange: 3
   isGrounded: 0
-  normalColor: {r: 1, g: 0, b: 0, a: 1}
-  attackColor: {r: 1, g: 1, b: 1, a: 1}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  attackColor: {r: 1, g: 0, b: 0, a: 1}
   normalAlpha: 1
   attackAlpha: 0.5
   colorLerpSpeed: 6
@@ -193,9 +216,12 @@ MonoBehaviour:
   patrolPointB: {fileID: 0}
   currentState: 0
   useDefaultMovement: 0
+  canJump: 0
   knockbackForce: 5
   knockbackUpForce: 2
   knockbackDuration: 0.2
+  canTakeKnockback: 1
+  isFeared: 0
 --- !u!114 &3640378733060103117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,10 +235,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   attackPoint: {fileID: 8376851092869265118}
-  attackRadius: 0.8
+  attackRadius: 0.5
   damage: 1
-  attackCooldown: 1
-  windUpTime: 0.15
+  attackCooldown: 2
+  windUpTime: 0.25
 --- !u!114 &3733201784443948806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,9 +252,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFrogScript
   meleeRepeats: 1
-  hopForceY: 4
-  hopForceX: 2
-  hopCooldown: 1.2
 --- !u!1 &5149278863707321224
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +277,7 @@ Transform:
   m_GameObject: {fileID: 5149278863707321224}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0, z: 0}
+  m_LocalPosition: {x: 0.374, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

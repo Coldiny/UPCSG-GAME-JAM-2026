@@ -8,13 +8,12 @@ public class GameManager : MonoBehaviour
 
     // variables
     bool hasGameEnded = false;
-    int animationLength;
+    float animationLength = 1f;
     string routeTaken; // implement this
-
 
     public void PlayerHasDied()
     {
-        // play death animation
+        // play death animation in player
         // i think its like playerAnimator.setTrigger("NameOfAnimation");
         // calling a method to determine routeTaken?
         StartCoroutine(GameOverSequence(routeTaken)); // again route taken

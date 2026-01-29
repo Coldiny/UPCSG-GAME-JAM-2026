@@ -12,9 +12,10 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Transform groundCheck;
     public LayerMask whatIsGround;
-    public Animator animator;
+    public Animator anim;
     public GameObject DashUI;
     public GameObject DoubleJumpUI;
+    PlayerHealth playerHealth;
 
     [Header("Ability Unlocks")]
     public bool canDoubleJump = false; // Check this ONLY when player gets the item!
@@ -48,16 +49,26 @@ public class PlayerMovement : MonoBehaviour
     {
         defaultSpeed = CharacterSpeed;
         extraJumps = extraJumpsValue;
+        anim = GetComponent<Animator>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     private void Update()
     {
+        if (playerHealth.IsDead)
+        {
+            enabled = false; // disables input code?
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
 
         UpdateDashUI();
         UpdateDoubleJump();
         // --- 1. Ground Check ---
         bool wasGrounded = isGrounded;
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, whatIsGround);
+        anim.SetBool("isGrounded", isGrounded);
 
         if (isGrounded && !wasGrounded)
         {
@@ -76,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         horizontalMove = moveInput * CharacterSpeed;
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        anim.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         // --- 3. Sprint Logic ---
         // Added 'canSprint' check here in case you want to unlock that too
@@ -84,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isSprinting = true;
             CharacterSpeed = 60f;
-            animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+            anim.SetFloat("Speed", Mathf.Abs(horizontalMove));
         }
         else
         {
@@ -109,6 +120,8 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        anim.SetFloat("yVelocity", rb.linearVelocity.y);
+
         // --- 5. Dash Logic ---
         if (isDashing) return;
 
@@ -122,6 +135,13 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         
+
+        if (playerHealth.IsDead)
+        {
+            enabled = false; // disables input code?
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
 
 
         if (isDashing) return;

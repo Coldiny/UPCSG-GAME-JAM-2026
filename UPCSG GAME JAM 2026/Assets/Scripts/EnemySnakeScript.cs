@@ -27,10 +27,19 @@ public class EnemySnakeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isInLight || Time.time < fearEndTime)
+        if (isInLight)
         {
+            enemy.isFeared = true;
             return;
         }
+
+        if(Time.time < fearEndTime)
+        {
+            enemy.isFeared = true;
+            return;
+        }
+
+        enemy.isFeared = false;
 
         if (enemy.currentState != Enemy.EnemyState.Attack)
         {
@@ -69,7 +78,8 @@ public class EnemySnakeScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Light"))
+        
+        if (other.CompareTag("Light"))
         {
             EnterFear();
         }
@@ -88,6 +98,7 @@ public class EnemySnakeScript : MonoBehaviour
         if(other.CompareTag("Light"))
         {
             isInLight = false;
+            fearEndTime = Time.time + fearCooldown;
         }
     }
 
@@ -97,7 +108,9 @@ public class EnemySnakeScript : MonoBehaviour
         fearEndTime = Time.time + fearCooldown;
 
         // born to chase, FORCED TO PATROL
-        enemy.currentState = Enemy.EnemyState.Patrol;
+        // cause fear = patrol
+        enemy.isFeared = true;
+        enemy.SwitchPatrolTarget();
 
         // no more attacks FORCED TO PATROL
         if(melee != null)

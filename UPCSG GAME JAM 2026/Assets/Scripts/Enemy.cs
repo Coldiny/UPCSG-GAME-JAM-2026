@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using static System.Net.WebRequestMethods;
@@ -7,23 +8,18 @@ public class Enemy : MonoBehaviour, IAttackable
     private Rigidbody2D rb;
     private Collider2D col;
     public Transform player; 
-    public LayerMask groundLayer; 
+    public LayerMask groundLayer;
+    public Animator anim;
     
     [Header("Settings")] 
     public int health; 
     public float speed; 
     public int Edamage; 
-    public float jumpForce;
     public float detectionRange = 8f;
     public float attackRange = 1.6f;
     public float attackExitRange = 2.2f;
 
     public bool isGrounded; 
-    
-    private bool shouldJump;
-    private bool wallAhead;
-    private float jumpCooldown = 1f; // seconds between jumps
-    private float nextJumpTime = 0f;
 
     private bool isChasing = false;
 
@@ -45,13 +41,17 @@ public class Enemy : MonoBehaviour, IAttackable
 
     [Header("Movement Options")]
     public bool useDefaultMovement = true;
+    public bool canJump = false;
 
     [Header("Knockback Settings")]
     public float knockbackForce = 5f;
     public float knockbackUpForce = 2f;
     public float knockbackDuration = 0.2f;
-    private float knockbackTimer = 0f;
+    private float knockbackTimer = 1f;
     public bool canTakeKnockback = true;
+
+    [Header("Status Effects")]
+    public bool isFeared;
 
     public enum EnemyState
     {
@@ -70,6 +70,7 @@ public class Enemy : MonoBehaviour, IAttackable
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
         spriteRenderer.color = normalColor;
         currentTarget = patrolPointB; // 1st patrol target
     }
@@ -77,33 +78,47 @@ public class Enemy : MonoBehaviour, IAttackable
     {
         // Determine the distance between enemy and player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        isChasing = distanceToPlayer <= detectionRange;
+
+        if(isFeared)
+        {
+            isChasing = false;
+        } else
+        {
+            isChasing = distanceToPlayer <= detectionRange;
+        }
 
         // Adding a bit extra range for attack, so that exiting attack range wont immediately stop attack state
         // Decide state
-        if(currentState == EnemyState.Attack)
+
+        if (isFeared)
         {
-            if(distanceToPlayer > attackExitRange)
-            {
-                currentState = EnemyState.Chase;
-            }
-        } else
+            currentState = EnemyState.Patrol;
+        }
+        else
         {
-            if(distanceToPlayer <= attackRange)
+            if (currentState == EnemyState.Attack)
             {
-                currentState = EnemyState.Attack;
-            }
-            else if (distanceToPlayer <= detectionRange)
-            {
-                currentState = EnemyState.Chase;
+                if (distanceToPlayer > attackExitRange)
+                {
+                    currentState = EnemyState.Chase;
+                }
             }
             else
             {
-                currentState = EnemyState.Patrol;
+                if (distanceToPlayer <= attackRange)
+                {
+                    currentState = EnemyState.Attack;
+                }
+                else if (distanceToPlayer <= detectionRange)
+                {
+                    currentState = EnemyState.Chase;
+                }
+                else
+                {
+                    currentState = EnemyState.Patrol;
+                }
             }
         }
-
-        
 
         // Change color and alpha depending on state
         Color targetColor;
@@ -118,8 +133,14 @@ public class Enemy : MonoBehaviour, IAttackable
         }
         spriteRenderer.color = Color.Lerp(spriteRenderer.color, targetColor, Time.deltaTime * colorLerpSpeed);
 
+        // Patrol target switching
+        if (!isChasing && Vector2.Distance(transform.position, currentTarget.position) < 0.2f)
+        {
+            currentTarget = currentTarget == patrolPointA ? patrolPointB : patrolPointA;
+        }
+
         // Decide target
-        Transform target = isChasing ? player : currentTarget;
+        Transform target = currentState == EnemyState.Patrol ? currentTarget : player;
 
         // Target Direction
         float direction = Mathf.Sign(target.position.x - transform.position.x);
@@ -133,110 +154,59 @@ public class Enemy : MonoBehaviour, IAttackable
         Vector2 feetPos = new Vector2(col.bounds.center.x, col.bounds.min.y); // so we can locate feet
         isGrounded = Physics2D.Raycast(feetPos, Vector2.down, 0.05f, groundLayer);
 
-        // Front of feet
-        float frontOffset = col.bounds.extents.x + 0.05f;
-        Vector2 frontFeetPos = feetPos + new Vector2(direction * frontOffset, 0);
-
-        // Player above detection
-        bool isPlayerAbove = isChasing && player.position.y > transform.position.y + 0.7f;
-
-        // Jump if there's gap ahead && no ground infront 
-        // else if Jump if wall infront 
-        // else if there's player above and platform above 
-
-        // Check ground infront (aka checking for gaps)
-        bool groundAhead = Physics2D.Raycast(frontFeetPos, Vector2.down, 0.2f, groundLayer);
-
-        // Check wall infront of enemy
-        Vector2 wallCheckPos = new Vector2(col.bounds.center.x + direction * col.bounds.extents.x, col.bounds.center.y);
-        wallAhead = Physics2D.Raycast(wallCheckPos, new Vector2(direction, 0), 0.1f, groundLayer);
-
-        // Check if platform above enemy
-        bool platformAbove = Physics2D.Raycast(transform.position, Vector2.up, 3f, groundLayer);
-
-        shouldJump = false;
-
-        if (isGrounded)
-        { 
-            if(!groundAhead || wallAhead || (isPlayerAbove && platformAbove))
-            {
-                shouldJump = true;
-            }
-        }
-
         // DEBUG
         Debug.DrawRay(feetPos, Vector2.down * 0.05f, Color.yellow); // isGrounded
-        Debug.DrawRay(frontFeetPos, Vector2.down * 0.2f, Color.blue); // groundAhead
-        Debug.DrawRay(wallCheckPos, new Vector2(direction, 0) * 0.1f, Color.red); // wallAhead
 
-        // Patrol target switching
-        if (!isChasing)
-        {
-            if(Vector2.Distance(transform.position, currentTarget.position) < 0.2f)
-            {
-                currentTarget = currentTarget == patrolPointA ? patrolPointB : patrolPointA;
-            }
-        }
+        
+
     } 
     private void FixedUpdate() 
     {
-        // Determine Target to lock on, hohoho
-        Transform target = isChasing ? player : currentTarget;
-
-        // Target Direction
-        float direction = Mathf.Sign(target.position.x - transform.position.x);
-
         if (knockbackTimer > 0f)
         {
             knockbackTimer -= Time.fixedDeltaTime;
         }
 
-        // No moving when attacking
-        if(currentState != EnemyState.Attack && useDefaultMovement && knockbackTimer <= 0f)
+        // if attacking, not default movement or knocked no moving allowed
+        if (currentState == EnemyState.Attack || !useDefaultMovement || knockbackTimer > 0f)
         {
-            // Chase player
-            float horizontalVelocity = direction * speed;
-
-            // Stop if grounded and wall ahead
-            if (isGrounded && wallAhead)
-            {
-                horizontalVelocity = 0f; // we stop before jumping over wall :D
-            }
-
-            Debug.Log(useDefaultMovement);
-            rb.linearVelocity = new Vector2(horizontalVelocity, rb.linearVelocity.y);
+            return;
         }
+
+        // Determine Target to lock on, hohoho
+        Transform target = (currentState == EnemyState.Patrol) ? currentTarget : player;
+
+        // Target Direction
+        float direction = Mathf.Sign(target.position.x - transform.position.x);
+
+        rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
+
         
-        // JUMP GOOOO, PLUS ULTRA
-        if (currentState != EnemyState.Attack && isGrounded && shouldJump && Time.time >= nextJumpTime) 
-        {
-            nextJumpTime = Time.time + jumpCooldown;
-
-            shouldJump = false;
-
-            float horizontalBoost = wallAhead ? speed * 1.8f : speed * 0.8f; // To increase jump power for walls hehehehe
-
-            Vector2 jumpVector = new Vector2(direction * horizontalBoost, jumpForce); 
-            rb.AddForce(jumpVector, ForceMode2D.Impulse);
-        } 
     }
     public void TakeDamage(int damage)
     {
         health -= damage;
         Debug.Log("Enemy took " + damage + " damage. Remaining health: " + health);
 
+        anim.SetBool("isHurt", true);
+
         if (health <= 0)
         {
             Die();
         }
 
-        if(player != null && canTakeKnockback)
+        if(player != null && canTakeKnockback && isGrounded)
         {
             float dir = Mathf.Sign(transform.position.x - player.position.x); // this is pushing away from player
 
             rb.linearVelocity = new Vector2(dir * knockbackForce, knockbackUpForce);
             knockbackTimer = knockbackDuration;
         }
+    }
+
+    public void OnHurtAnimationEnd()
+    {
+        anim.SetBool("isHurt", false);
     }
 
     public void Die()

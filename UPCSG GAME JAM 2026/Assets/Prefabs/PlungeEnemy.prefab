@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2620704382846154981}
   - component: {fileID: 1991555583818325177}
   - component: {fileID: 2524257252056465293}
-  - component: {fileID: 4525779457831195908}
   - component: {fileID: 3415512834507292581}
   - component: {fileID: 7097052658923553652}
   - component: {fileID: 192615221127425122}
@@ -132,42 +131,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!58 &4525779457831195908
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3610821235649306251}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
 --- !u!50 &3415512834507292581
 Rigidbody2D:
   serializedVersion: 5
@@ -227,6 +190,12 @@ MonoBehaviour:
   patrolPointA: {fileID: 0}
   patrolPointB: {fileID: 0}
   currentState: 0
+  useDefaultMovement: 1
+  knockbackForce: 5
+  knockbackUpForce: 2
+  knockbackDuration: 0.2
+  canTakeKnockback: 1
+  isFeared: 0
 --- !u!114 &192615221127425122
 MonoBehaviour:
   m_ObjectHideFlags: 0

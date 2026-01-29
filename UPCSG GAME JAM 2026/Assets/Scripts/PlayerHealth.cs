@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Processors;
 
 
 
@@ -11,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public Rigidbody2D rb;
     GameManager gameManager;
     public GameObject[] hearts;
+    Animator anim;
 
     [Header("i-Frame Settings")]
     public float iFrameDuration = 1.0f;     // How long to be invincible
@@ -22,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
     [Header("Settings")]
     public int health;
 
+    public bool IsDead { get; private set; }
 
     private void Awake()
     {
@@ -31,6 +34,8 @@ public class PlayerHealth : MonoBehaviour
     {
         // Get the SpriteRenderer component
         spriteRend = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        IsDead = false;
         // Ensure UI is correct at start
         UpdateHeartUI();
     }
@@ -69,10 +74,17 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
 
         {
+            if(IsDead)
+            {
+                return;
+            }
 
             Debug.Log("Player is dead.");
-            gameObject.SetActive(false);
-            gameManager.PlayerHasDied();
+            IsDead = true;
+            anim.SetBool("isDead", true);
+            rb.linearVelocity = Vector2.zero;
+            // gameObject.SetActive(false);
+            // gameManager.PlayerHasDied(); moved to a function to be called by animation event
         }
 
         else
@@ -81,6 +93,12 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine(InvincibilityRoutine());
         }
 
+    }
+
+    public void OnDeathAnimationFinished()
+    {
+        Debug.Log("GameManager got called");
+        gameManager.PlayerHasDied(); // this is where it got moved
     }
 
     private IEnumerator InvincibilityRoutine()

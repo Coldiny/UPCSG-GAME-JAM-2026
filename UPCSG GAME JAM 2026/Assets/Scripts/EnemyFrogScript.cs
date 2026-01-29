@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyFrogScript : MonoBehaviour
@@ -5,26 +6,19 @@ public class EnemyFrogScript : MonoBehaviour
     [Header("Refencers")]
     Enemy enemy;
     EnemyMeleeAttack melee;
-    Rigidbody2D rb;
+    Animator anim;
 
     [Header("Pattern Settings")]
     public int meleeRepeats = 1;
 
     int meleeCount;
 
-    [Header("Hop Settings")]
-    public float hopForceY = 7f;
-    public float hopForceX = 4f;
-    public float hopCooldown = 1.2f;
-
-    float nextHopTime;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         enemy = GetComponent<Enemy>();
         melee = GetComponent<EnemyMeleeAttack>();
-        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -44,77 +38,29 @@ public class EnemyFrogScript : MonoBehaviour
         ExecutePattern();
     }
 
-    private void FixedUpdate()
-    {
-        if(enemy.isGrounded)
-        {
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-        }
-
-        HandleHopping();
-    }
-
-    void HandleHopping()
-    {
-        if(!enemy.isGrounded)
-        {
-            return;
-        }
-
-        if(Time.time < nextHopTime)
-        {
-            return;
-        }
-
-
-        if(enemy.currentState == Enemy.EnemyState.Patrol)
-        {
-            if(Vector2.Distance(transform.position, enemy.GetCurrentPatrolTarget().position) < 1f)
-            {
-                enemy.SwitchPatrolTarget();
-                return;
-            }
-        }
-
-        // decides whether patrol or enemy
-        Transform target = enemy.currentState == Enemy.EnemyState.Patrol ? enemy.GetCurrentPatrolTarget() : enemy.player;
-
-        // direction of HOP
-        float dir = Mathf.Sign(target.position.x - transform.position.x);
-
-        // LUNGE when in ATTACK state
-        float finalX = enemy.currentState == Enemy.EnemyState.Chase ? hopForceX * 3f : hopForceX;
-        
-        //Debug.Log("FinalX " + finalX);
-        Vector2 hop = new Vector2(dir * finalX, hopForceY);
-
-        //Debug.Log("Hop dir " + dir);
-        //Debug.Log("Hop val " + hop);
-        
-        rb.linearVelocity = new Vector2(dir * finalX, hopForceY);
-
-        nextHopTime = Time.time + hopCooldown;
-    }
-
     bool AnyAttackRunning()
     {
-        if ((melee != null && melee.isAttacking))
-        {
-            return true;
-        }
-
-        return false;
+        return (melee != null && melee.isAttacking);
     }
 
     void ExecutePattern()
     {
         if (meleeCount < meleeRepeats && melee != null)
         {
+            anim.SetBool("isAttacking", true);
             melee.tryMelee();
             meleeCount++;
+
+            StartCoroutine(ResetAttackBool());
             return;
         }
 
         meleeCount = 0;
+    }
+
+    private IEnumerator ResetAttackBool()
+    {
+        yield return new WaitUntil(() => melee.isAttacking == false);
+        anim.SetBool("isAttacking", false);
     }
 }
