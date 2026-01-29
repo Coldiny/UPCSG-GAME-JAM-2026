@@ -1,5 +1,5 @@
+using System.Collections;
 using UnityEngine;
-
 using UnityEngine.InputSystem;
 
 
@@ -12,6 +12,13 @@ public class PlayerHealth : MonoBehaviour
     GameManager gameManager;
     public GameObject[] hearts;
 
+    [Header("i-Frame Settings")]
+    public float iFrameDuration = 1.0f;     // How long to be invincible
+    public int numberOfFlashes = 5;         // How many times to blink
+    private bool isInvincible = false;      // Internal check
+
+    private SpriteRenderer spriteRend;      // To control the flashing
+
     [Header("Settings")]
     public int health;
 
@@ -22,6 +29,8 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Start()
     {
+        // Get the SpriteRenderer component
+        spriteRend = GetComponent<SpriteRenderer>();
         // Ensure UI is correct at start
         UpdateHeartUI();
     }
@@ -51,10 +60,10 @@ public class PlayerHealth : MonoBehaviour
     public void PlayerTakeDamage(int damage)
 
     {
-
+        if (isInvincible) return;
         health -= damage;
+        rb.linearVelocity = Vector2.up * 5f; // Knockback effect
         UpdateHeartUI();
-        rb.AddForce(new Vector2(-10, 0), ForceMode2D.Impulse);
 
         Debug.Log("Player took " + damage + " damage. Remaining health: " + health);
         if (health <= 0)
@@ -66,5 +75,35 @@ public class PlayerHealth : MonoBehaviour
             gameManager.PlayerHasDied();
         }
 
+        else
+        {
+            // 3. Trigger Invincibility
+            StartCoroutine(InvincibilityRoutine());
+        }
+
+    }
+
+    private IEnumerator InvincibilityRoutine()
+    {
+        isInvincible = true;
+
+        //Optional: Ignore collisions with enemies during this time
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+
+        for (int i = 0; i < numberOfFlashes; i++)
+        {
+            // Turn partially transparent (or Red)
+            spriteRend.color = new Color(1, 1, 1, 0.5f);
+            yield return new WaitForSeconds(iFrameDuration / (numberOfFlashes * 2));
+
+            // Turn back to normal
+            spriteRend.color = Color.white;
+            yield return new WaitForSeconds(iFrameDuration / (numberOfFlashes * 2));
+        }
+
+        isInvincible = false;
+
+        //Re-enable collisions
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
     }
 }

@@ -8,7 +8,6 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("Abilities")]
     public bool canMAttack = false;
-    public bool canRAttack = false;
 
     [Header("Settings")]
     public float startTimeBtwAttack;
@@ -17,6 +16,12 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask whatIsEnemies;
 
     private float timeBtwAttack;
+
+    public void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
 
     public void Update()
     {

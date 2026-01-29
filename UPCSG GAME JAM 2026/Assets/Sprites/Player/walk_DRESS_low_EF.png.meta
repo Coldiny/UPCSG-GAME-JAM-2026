@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 36ceb47bf200f0846865dc63037990ad
+guid: 72fce2ba53f9bc74599f851107d31111
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7896281735413620878
-    second: playerSprite_0
+      213: 7047703101816296079
+    second: walk_DRESS_low_EF_0
   - first:
-      213: 4214452682036070143
-    second: playerSprite_1
+      213: 7478496921599614429
+    second: walk_DRESS_low_EF_1
   - first:
-      213: 6707464328325396904
-    second: playerSprite_2
+      213: 5855728001793508382
+    second: walk_DRESS_low_EF_2
   - first:
-      213: -6646785486133963012
-    second: playerSprite_3
+      213: 4954459361994105593
+    second: walk_DRESS_low_EF_3
   - first:
-      213: 7079147233807534215
-    second: playerSprite_4
+      213: -6661451949921790686
+    second: walk_DRESS_low_EF_4
   - first:
-      213: 9203835802740118276
-    second: playerSprite_5
+      213: 7542254332347448103
+    second: walk_DRESS_low_EF_5
   - first:
-      213: 1903030100871761730
-    second: playerSprite_6
+      213: 849930134213977112
+    second: walk_DRESS_low_EF_6
   - first:
-      213: 6646376060719561138
-    second: playerSprite_7
+      213: -4107705713613948321
+    second: walk_DRESS_low_EF_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,177 +134,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idleAnimation_0
+      name: walk_DRESS_low_EF_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 25
         y: 0
-        width: 16
-        height: 32
+        width: 22
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 34cbfcaaaadde3542acf7282318ea1ab
-      internalID: -2132811812
+      spriteID: f82dd2a71a87ec160800000000000000
+      internalID: 7047703101816296079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_1
+      name: walk_DRESS_low_EF_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 98
         y: 0
-        width: 16
-        height: 32
+        width: 17
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ff678a049258b1c4e897a6a59da06ec1
-      internalID: -1645216843
+      spriteID: ddd1cc1d355f8c760800000000000000
+      internalID: 7478496921599614429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_2
+      name: walk_DRESS_low_EF_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 168
         y: 0
-        width: 16
-        height: 32
+        width: 14
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ec03fe2c57769c745a35fd18d9553b7f
-      internalID: 1676256135
+      spriteID: e14c538b799b34150800000000000000
+      internalID: 5855728001793508382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_3
+      name: walk_DRESS_low_EF_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 235
         y: 0
-        width: 16
-        height: 32
+        width: 15
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: acf84af3db6fd8048bb6a9b8eb3a41f3
-      internalID: 1123142513
+      spriteID: 9f264c53a86c1c440800000000000000
+      internalID: 4954459361994105593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_4
+      name: walk_DRESS_low_EF_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 308
         y: 0
-        width: 16
-        height: 32
+        width: 21
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bfa3d92bfb45495448f831b2591f0c8f
-      internalID: 320688545
+      spriteID: 2251494deb4cd83a0800000000000000
+      internalID: -6661451949921790686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_5
+      name: walk_DRESS_low_EF_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 377
         y: 0
-        width: 16
-        height: 32
+        width: 15
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a9f23a563a787074bb45a70291921ee5
-      internalID: -1221001769
+      spriteID: 72b783dca587ba860800000000000000
+      internalID: 7542254332347448103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_6
+      name: walk_DRESS_low_EF_6
       rect:
         serializedVersion: 2
-        x: 96
+        x: 448
         y: 0
-        width: 16
-        height: 32
+        width: 12
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 287983d986dc53f40b58fc406272e679
-      internalID: -1328238700
+      spriteID: 81469b534fe8bcb00800000000000000
+      internalID: 849930134213977112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleAnimation_7
+      name: walk_DRESS_low_EF_7
       rect:
         serializedVersion: 2
-        x: 112
+        x: 520
         y: 0
-        width: 16
-        height: 32
+        width: 12
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0d928d36d5fbe51409947ac396ae69fc
-      internalID: 1700724172
+      spriteID: f5ab232ca6f7ef6c0800000000000000
+      internalID: -4107705713613948321
       vertices: []
       indices: 
       edges: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9be8929267ca6b149aea9995206b7f55
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -321,18 +321,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      idleAnimation_0: -2132811812
-      idleAnimation_1: -1645216843
-      idleAnimation_2: 1676256135
-      idleAnimation_3: 1123142513
-      idleAnimation_4: 320688545
-      idleAnimation_5: -1221001769
-      idleAnimation_6: -1328238700
-      idleAnimation_7: 1700724172
+      walk_DRESS_low_EF_0: 7047703101816296079
+      walk_DRESS_low_EF_1: 7478496921599614429
+      walk_DRESS_low_EF_2: 5855728001793508382
+      walk_DRESS_low_EF_3: 4954459361994105593
+      walk_DRESS_low_EF_4: -6661451949921790686
+      walk_DRESS_low_EF_5: 7542254332347448103
+      walk_DRESS_low_EF_6: 849930134213977112
+      walk_DRESS_low_EF_7: -4107705713613948321
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

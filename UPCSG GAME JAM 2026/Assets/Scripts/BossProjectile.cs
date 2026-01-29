@@ -20,7 +20,7 @@ public class BossProjectile : MonoBehaviour
         // Assuming your player has a tag "Player" and a script with TakeDamage
         if (other.CompareTag("Player"))
         {
-            // other.GetComponent<PlayerController>().TakeDamage(damage); 
+            other.GetComponent<PlayerHealth>().PlayerTakeDamage(damage); 
             Debug.Log("Player Hit by Projectile!");
             Destroy(gameObject);
         }
