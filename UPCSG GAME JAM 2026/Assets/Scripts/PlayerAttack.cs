@@ -35,19 +35,46 @@ public class PlayerAttack : MonoBehaviour
 
     void MAttack()
     {
-
         Debug.Log("Attack!");
 
-        // 3. Physics Logic (Converted to 2D)
+        // 1. Detect enemies
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
 
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
-            Enemy enemyScript = enemiesToDamage[i].GetComponent<Enemy>();
+            Collider2D hitEnemy = enemiesToDamage[i];
 
+            // --- CHECK 1: Normal Enemy ---
+            Enemy enemyScript = hitEnemy.GetComponent<Enemy>();
             if (enemyScript != null)
             {
                 enemyScript.TakeDamage(damageAmount);
+            }
+
+            // --- CHECK 2: Boss Body (Direct Hit) ---
+            // This works if you hit the main red square
+            BossController bossBody = hitEnemy.GetComponent<BossController>();
+            if (bossBody != null)
+            {
+                bossBody.TakeDamage(damageAmount);
+                Debug.Log("Boss Body Hit!");
+            }
+
+            // --- CHECK 3: Boss Arm (Arm Hit) ---
+            // This works if you hit the blue squares
+            BossArm bossArm = hitEnemy.GetComponent<BossArm>();
+            if (bossArm != null)
+            {
+                // We hit an arm! Now we need to find the Brain (BossController) 
+                // which is usually on the PARENT object of the arm.
+                BossController parentBoss = bossArm.GetComponentInParent<BossController>();
+
+                if (parentBoss != null)
+                {
+                    // Pass the damage to the controller, telling it which arm was hit
+                    parentBoss.DamageArm(damageAmount, bossArm.isLeftArm);
+                    Debug.Log("Boss Arm Hit!");
+                }
             }
         }
 
