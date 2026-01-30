@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public bool canDoubleJump = false; // Check this ONLY when player gets the item!
     public bool canDash = false;        // Option to unlock dashing later too
     public bool canSprint = true;      // Option to unlock sprinting later too
+    public bool canMove = true;
 
     [Header("Movement Settings")]
     public float CharacterSpeed = 40f;
@@ -55,9 +56,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+
+        if (!canMove) return;
+
         if (playerHealth.IsDead)
         {
-            enabled = false; // disables input code?
             rb.linearVelocity = Vector2.zero;
             return;
         }
@@ -111,11 +114,14 @@ public class PlayerMovement : MonoBehaviour
             if (isGrounded)
             {
                 jump = true; // Normal Jump
+                Debug.Log("Play JUMP SOUND");
+                AudioManager.Instance.Play("Jump");
             }
             // CHECK: Do we have jumps left? AND Do we have the ability unlocked?
             else if (extraJumps > 0 && canDoubleJump)
             {
                 doDoubleJump = true;
+                AudioManager.Instance.Play("Jump");
                 extraJumps--;
             }
         }
@@ -138,7 +144,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (playerHealth.IsDead)
         {
-            enabled = false; // disables input code?
             rb.linearVelocity = Vector2.zero;
             return;
         }
@@ -163,6 +168,9 @@ public class PlayerMovement : MonoBehaviour
     {
         dashReady = false;
         isDashing = true;
+
+        AudioManager.Instance.Play("Dash");
+        anim.SetTrigger("Dash");
 
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
@@ -205,5 +213,15 @@ public class PlayerMovement : MonoBehaviour
         {
             DoubleJumpUI.SetActive(false);
         }
+    }
+
+    public void PlayFootstep1()
+    {
+        AudioManager.Instance.Play("Walk1");
+    }
+
+    public void PlayFootstep2()
+    {
+        AudioManager.Instance.Play("Walk2");
     }
 }

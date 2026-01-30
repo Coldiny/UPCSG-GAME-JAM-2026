@@ -41,6 +41,7 @@ public class PlayerAttack : MonoBehaviour
     void MAttack()
     {
         Debug.Log("Attack!");
+        AudioManager.Instance.Play("Attack");
 
         // 1. Detect enemies
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);

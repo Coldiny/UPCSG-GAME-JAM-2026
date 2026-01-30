@@ -1,34 +1,31 @@
 fileFormatVersion: 2
-guid: a6c39bdf8598d4a4492caa262a329f2d
+guid: ff0e91d237f016d4c9b2d128320fd05d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 988908688719545333
-    second: idle_animation_EF_new_0
+      213: 2133594320973331960
+    second: walking_FULLBD_0
   - first:
-      213: -44137565062416712
-    second: idle_animation_EF_new_1
+      213: 2271837351286835243
+    second: walking_FULLBD_1
   - first:
-      213: 6922702246737406284
-    second: idle_animation_EF_new_2
+      213: 1166909597374237936
+    second: walking_FULLBD_2
   - first:
-      213: -999044929575623031
-    second: idle_animation_EF_new_3
+      213: 6788355439297808651
+    second: walking_FULLBD_3
   - first:
-      213: 760279616120487401
-    second: idle_animation_EF_new_4
+      213: 3121889065491701022
+    second: walking_FULLBD_4
   - first:
-      213: 8777615763131432255
-    second: idle_animation_EF_new_5
+      213: -9125287501683577888
+    second: walking_FULLBD_5
   - first:
-      213: 1059643296751319434
-    second: idle_animation_EF_new_6
+      213: -2663871858741033725
+    second: walking_FULLBD_6
   - first:
-      213: 1818356905177754227
-    second: idle_animation_EF_new_7
-  - first:
-      213: 4675150165665241074
-    second: idle_animation_EF_new_8
+      213: -4195167216431157388
+    second: walking_FULLBD_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -124,199 +121,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_animation_EF_new_0
+      name: walking_FULLBD_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
         y: 0
-        width: 25
-        height: 31
+        width: 44
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5f30d62863f49bd00800000000000000
-      internalID: 988908688719545333
+      spriteID: 302b513a50de1484e9403d857c55a533
+      internalID: 2141329811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_1
+      name: walking_FULLBD_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 78
         y: 0
-        width: 25
-        height: 31
+        width: 44
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8b634315e11336ff0800000000000000
-      internalID: -44137565062416712
+      spriteID: 6830bad977eb4dc4bab0eeda8ed3f4e5
+      internalID: -246162402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_2
+      name: walking_FULLBD_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 148
         y: 0
-        width: 25
-        height: 31
+        width: 44
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c49e49ee301621060800000000000000
-      internalID: 6922702246737406284
+      spriteID: 33af49a32b9f4ba43aad66e407fad11a
+      internalID: 1903910954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_3
+      name: walking_FULLBD_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 218
         y: 0
-        width: 25
-        height: 31
+        width: 44
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9866df10eeda222f0800000000000000
-      internalID: -999044929575623031
+      spriteID: 47e76322c34a5b247850cca68549787d
+      internalID: 1245063851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_4
+      name: walking_FULLBD_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 286
         y: 0
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 44
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5227273, y: 0.4827586}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9edf4d0684e0d8a00800000000000000
-      internalID: 760279616120487401
+      spriteID: 9764bd4ab142d194bad7ddb55d715fb8
+      internalID: -2107364868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_5
+      name: walking_FULLBD_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 357
         y: 0
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 44
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5227273, y: 0.4827586}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f3d7150e70b50d970800000000000000
-      internalID: 8777615763131432255
+      spriteID: 608db00d28530d74dbcaf8944d2a143f
+      internalID: -1013016007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_6
+      name: walking_FULLBD_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 427
         y: 0
-        width: 25
-        height: 31
+        width: 44
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a897c73d6fb94be00800000000000000
-      internalID: 1059643296751319434
+      spriteID: 78b00976f6f56ee458c1e952dba4d132
+      internalID: -403534704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_7
+      name: walking_FULLBD_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 495
         y: 0
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 44
+        height: 29
+      alignment: 9
+      pivot: {x: 0.54545456, y: 0.4827586}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 37aafff98f91c3910800000000000000
-      internalID: 1818356905177754227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_animation_EF_new_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2f7d5104e4871e040800000000000000
-      internalID: 4675150165665241074
+      spriteID: dd0b9d471c924724d9d5d1a473a5138a
+      internalID: 330044534
       vertices: []
       indices: 
       edges: []
@@ -325,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 92cccf590e19bdb4cb2fbabc409669b5
+    spriteID: 7a24109377f4b5a40ad5eb532a4f6ffd
     internalID: 0
     vertices: []
     indices: 
@@ -333,17 +308,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      idle_animation_EF_new_0: 988908688719545333
-      idle_animation_EF_new_1: -44137565062416712
-      idle_animation_EF_new_2: 6922702246737406284
-      idle_animation_EF_new_3: -999044929575623031
-      idle_animation_EF_new_4: 760279616120487401
-      idle_animation_EF_new_5: 8777615763131432255
-      idle_animation_EF_new_6: 1059643296751319434
-      idle_animation_EF_new_7: 1818356905177754227
-      idle_animation_EF_new_8: 4675150165665241074
+      walking_FULLBD_0: 2141329811
+      walking_FULLBD_1: -246162402
+      walking_FULLBD_2: 1903910954
+      walking_FULLBD_3: 1245063851
+      walking_FULLBD_4: -2107364868
+      walking_FULLBD_5: -1013016007
+      walking_FULLBD_6: -403534704
+      walking_FULLBD_7: 330044534
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

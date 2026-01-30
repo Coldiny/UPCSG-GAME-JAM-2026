@@ -1,34 +1,28 @@
 fileFormatVersion: 2
-guid: a6c39bdf8598d4a4492caa262a329f2d
+guid: 796d87a3dd747e945ae3c0b044adbf12
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 988908688719545333
-    second: idle_animation_EF_new_0
+      213: -1185461531047746579
+    second: MID_AIR_ATTACK_0
   - first:
-      213: -44137565062416712
-    second: idle_animation_EF_new_1
+      213: -6593181419004995715
+    second: MID_AIR_ATTACK_1
   - first:
-      213: 6922702246737406284
-    second: idle_animation_EF_new_2
+      213: 8963256204494622970
+    second: MID_AIR_ATTACK_2
   - first:
-      213: -999044929575623031
-    second: idle_animation_EF_new_3
+      213: 8555273942991082269
+    second: MID_AIR_ATTACK_3
   - first:
-      213: 760279616120487401
-    second: idle_animation_EF_new_4
+      213: 4400524358744734449
+    second: MID_AIR_ATTACK_4
   - first:
-      213: 8777615763131432255
-    second: idle_animation_EF_new_5
+      213: 176759854134975037
+    second: MID_AIR_ATTACK_5
   - first:
-      213: 1059643296751319434
-    second: idle_animation_EF_new_6
-  - first:
-      213: 1818356905177754227
-    second: idle_animation_EF_new_7
-  - first:
-      213: 4675150165665241074
-    second: idle_animation_EF_new_8
+      213: 748858559149981546
+    second: MID_AIR_ATTACK_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -124,199 +118,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_animation_EF_new_0
+      name: MID_AIR_ATTACK_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 25
-        height: 31
+        x: 9
+        y: 15
+        width: 40
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f30d62863f49bd00800000000000000
-      internalID: 988908688719545333
+      spriteID: de32203b4056c8fe0800000000000000
+      internalID: -1185461531047746579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_1
+      name: MID_AIR_ATTACK_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 25
-        height: 31
+        x: 99
+        y: 15
+        width: 40
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b634315e11336ff0800000000000000
-      internalID: -44137565062416712
+      spriteID: d77508c7e605084a0800000000000000
+      internalID: -6593181419004995715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_2
+      name: MID_AIR_ATTACK_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 25
-        height: 31
+        x: 191
+        y: 14
+        width: 58
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c49e49ee301621060800000000000000
-      internalID: 6922702246737406284
+      spriteID: af0d7b35702e36c70800000000000000
+      internalID: 8963256204494622970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_3
+      name: MID_AIR_ATTACK_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 25
-        height: 31
+        x: 281
+        y: 15
+        width: 59
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9866df10eeda222f0800000000000000
-      internalID: -999044929575623031
+      spriteID: d139328c2507ab670800000000000000
+      internalID: 8555273942991082269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_4
+      name: MID_AIR_ATTACK_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 25
-        height: 31
+        x: 331
+        y: 30
+        width: 6
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9edf4d0684e0d8a00800000000000000
-      internalID: 760279616120487401
+      spriteID: 1fafe6cd69dc11d30800000000000000
+      internalID: 4400524358744734449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_5
+      name: MID_AIR_ATTACK_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 25
-        height: 31
+        x: 371
+        y: 15
+        width: 42
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3d7150e70b50d970800000000000000
-      internalID: 8777615763131432255
+      spriteID: d3ad34c962af37200800000000000000
+      internalID: 176759854134975037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_animation_EF_new_6
+      name: MID_AIR_ATTACK_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 25
-        height: 31
+        x: 406
+        y: 21
+        width: 11
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a897c73d6fb94be00800000000000000
-      internalID: 1059643296751319434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_animation_EF_new_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37aafff98f91c3910800000000000000
-      internalID: 1818356905177754227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_animation_EF_new_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2f7d5104e4871e040800000000000000
-      internalID: 4675150165665241074
+      spriteID: a6f352554ea746a00800000000000000
+      internalID: 748858559149981546
       vertices: []
       indices: 
       edges: []
@@ -325,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 92cccf590e19bdb4cb2fbabc409669b5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -335,15 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      idle_animation_EF_new_0: 988908688719545333
-      idle_animation_EF_new_1: -44137565062416712
-      idle_animation_EF_new_2: 6922702246737406284
-      idle_animation_EF_new_3: -999044929575623031
-      idle_animation_EF_new_4: 760279616120487401
-      idle_animation_EF_new_5: 8777615763131432255
-      idle_animation_EF_new_6: 1059643296751319434
-      idle_animation_EF_new_7: 1818356905177754227
-      idle_animation_EF_new_8: 4675150165665241074
+      MID_AIR_ATTACK_0: -1185461531047746579
+      MID_AIR_ATTACK_1: -6593181419004995715
+      MID_AIR_ATTACK_2: 8963256204494622970
+      MID_AIR_ATTACK_3: 8555273942991082269
+      MID_AIR_ATTACK_4: 4400524358744734449
+      MID_AIR_ATTACK_5: 176759854134975037
+      MID_AIR_ATTACK_6: 748858559149981546
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

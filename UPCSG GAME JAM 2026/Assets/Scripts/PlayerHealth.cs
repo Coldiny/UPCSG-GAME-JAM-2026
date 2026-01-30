@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     [Header("References")]
     public Rigidbody2D rb;
     GameManager gameManager;
+    PlayerMovement playerMovement;
     public GameObject[] hearts;
     Animator anim;
 
@@ -35,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
         // Get the SpriteRenderer component
         spriteRend = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        playerMovement = GetComponent<PlayerMovement>();
         IsDead = false;
         // Ensure UI is correct at start
         UpdateHeartUI();
@@ -81,7 +83,9 @@ public class PlayerHealth : MonoBehaviour
 
             Debug.Log("Player is dead.");
             IsDead = true;
-            anim.SetBool("isDead", true);
+            playerMovement.canMove = false;
+            anim.SetTrigger("Die");
+
             rb.linearVelocity = Vector2.zero;
             // gameObject.SetActive(false);
             // gameManager.PlayerHasDied(); moved to a function to be called by animation event
@@ -101,6 +105,10 @@ public class PlayerHealth : MonoBehaviour
         gameManager.PlayerHasDied(); // this is where it got moved
     }
 
+    public void TestEvent()
+    {
+        Debug.Log("Test called");
+    }
     private IEnumerator InvincibilityRoutine()
     {
         isInvincible = true;
