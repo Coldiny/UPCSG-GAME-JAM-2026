@@ -56,15 +56,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-
-        if (!canMove) return;
-
         if (playerHealth.IsDead)
         {
             rb.linearVelocity = Vector2.zero;
+
+            // Freeze animator parameters so Death is not overridden
+            anim.SetFloat("Speed", 0);
+            anim.SetFloat("yVelocity", 0);
+            anim.SetBool("isGrounded", true);
+
             return;
         }
 
+        if (!canMove) return;
 
         UpdateDashUI();
         UpdateDoubleJump();
@@ -223,5 +227,15 @@ public class PlayerMovement : MonoBehaviour
     public void PlayFootstep2()
     {
         AudioManager.Instance.Play("Walk2");
+    }
+
+    public void PlayRunstep1()
+    {
+        AudioManager.Instance.Play("Run1");
+    }
+
+    public void PlayRunstep2()
+    {
+        AudioManager.Instance.Play("Run2");
     }
 }

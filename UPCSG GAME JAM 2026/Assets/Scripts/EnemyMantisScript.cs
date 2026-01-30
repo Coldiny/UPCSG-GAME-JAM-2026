@@ -7,11 +7,9 @@ public class EnemyMantisScript : MonoBehaviour
     Enemy enemy;
     EnemyMeleeAttack melee;
     EnemyPlungeAttack plunge;
+    Animator anim;
 
-    [Header("Pattern Settings")]
-    public int meleeRepeats = 3;
-
-    bool patternRunning;
+    bool patternRunning = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,7 +27,13 @@ public class EnemyMantisScript : MonoBehaviour
             return;
         }
 
-        if(!patternRunning)
+        if (anim != null)
+        {
+            anim.SetFloat("yVelocity", enemy.rb.linearVelocity.y);
+            anim.SetBool("isGrounded", enemy.isGrounded);
+        }
+
+        if (!patternRunning)
         {
             StartCoroutine(AttackPattern());  
         }
@@ -40,14 +44,12 @@ public class EnemyMantisScript : MonoBehaviour
         patternRunning = true;
 
         // MELEE SLASH SLASH SLASH
-        for(int i = 0; i < meleeRepeats; i++)
-        {
-            melee.tryMelee();
-            Debug.Log("Try Melee");
-            yield return new WaitUntil(() => !melee.isAttacking);
-        }
+        melee.tryMelee(); // called by ANIMATION MY SAVIOUR
 
-        yield return new WaitForSeconds(0.2f); // small pause before doing the plunge attack routine
+
+        yield return new WaitUntil(() => !melee.isAttacking); // wait until all 3 attacks done
+
+        yield return new WaitForSeconds(0.2f);
 
         // GO HIGH AND DOWN LOW (PLUNGE)
         plunge.TryPlunge();

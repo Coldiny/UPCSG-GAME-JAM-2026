@@ -129,10 +129,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 33
+        width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -149,12 +149,12 @@ TextureImporter:
       name: bull_charge-sheet_64X32_1
       rect:
         serializedVersion: 2
-        x: 28
-        y: 2
-        width: 31
-        height: 15
+        x: 64
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: bull_charge-sheet_64X32_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 31
+        width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: bull_charge-sheet_64X32_3
       rect:
         serializedVersion: 2
-        x: 100
-        y: 3
-        width: 23
-        height: 15
+        x: 192
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: bull_charge-sheet_64X32_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 256
         y: 0
-        width: 33
+        width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -233,99 +233,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: bull_charge-sheet_64X32_5
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 2
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5fcd4cb6296493210800000000000000
-      internalID: 1313158361042443509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull_charge-sheet_64X32_6
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 6
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fe2c84f3f4e97abe0800000000000000
-      internalID: -1466029090484469009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull_charge-sheet_64X32_7
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27ce8489ee409d490800000000000000
-      internalID: -7721134663346361230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull_charge-sheet_64X32_8
-      rect:
-        serializedVersion: 2
-        x: 228
-        y: 0
-        width: 85
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c68fb3234e1bdc60800000000000000
-      internalID: 7843896449707247303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3fadec025ef2cfd45a83cdc51fee7a42
     internalID: 0
     vertices: []
     indices: 
@@ -333,17 +245,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       bull_charge-sheet_64X32_0: -8279993143484098620
       bull_charge-sheet_64X32_1: 4481445865996175766
       bull_charge-sheet_64X32_2: -4355776740838072457
       bull_charge-sheet_64X32_3: 8125900406868726628
       bull_charge-sheet_64X32_4: -4550364939260360028
-      bull_charge-sheet_64X32_5: 1313158361042443509
-      bull_charge-sheet_64X32_6: -1466029090484469009
-      bull_charge-sheet_64X32_7: -7721134663346361230
-      bull_charge-sheet_64X32_8: 7843896449707247303
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

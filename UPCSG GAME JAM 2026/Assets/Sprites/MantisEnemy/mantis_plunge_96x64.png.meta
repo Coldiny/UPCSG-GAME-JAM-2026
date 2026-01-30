@@ -124,12 +124,12 @@ TextureImporter:
       name: mantis_plunge_96x64_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 7
-        width: 54
-        height: 54
+        x: 0
+        y: 0
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,12 +146,12 @@ TextureImporter:
       name: mantis_plunge_96x64_1
       rect:
         serializedVersion: 2
-        x: 106
+        x: 96
         y: 0
-        width: 67
-        height: 61
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: mantis_plunge_96x64_2
       rect:
         serializedVersion: 2
-        x: 204
+        x: 192
         y: 0
-        width: 65
-        height: 40
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,12 +190,12 @@ TextureImporter:
       name: mantis_plunge_96x64_3
       rect:
         serializedVersion: 2
-        x: 222
-        y: 36
-        width: 6
-        height: 6
+        x: 288
+        y: 0
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: mantis_plunge_96x64_4
       rect:
         serializedVersion: 2
-        x: 304
+        x: 384
         y: 0
-        width: 61
-        height: 40
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,12 +234,12 @@ TextureImporter:
       name: mantis_plunge_96x64_5
       rect:
         serializedVersion: 2
-        x: 400
+        x: 480
         y: 0
-        width: 61
-        height: 40
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: mantis_plunge_96x64_6
       rect:
         serializedVersion: 2
-        x: 496
+        x: 576
         y: 0
-        width: 61
-        height: 40
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,33 +274,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: mantis_plunge_96x64_7
-      rect:
-        serializedVersion: 2
-        x: 598
-        y: 0
-        width: 55
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 652dd4b37bec6ad70800000000000000
-      internalID: 9054151387244253782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 35c022c7f45fea140b90c093830b6645
     internalID: 0
     vertices: []
     indices: 
@@ -308,7 +286,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       mantis_plunge_96x64_0: -8463312128918682090
       mantis_plunge_96x64_1: 4519957296339691442
@@ -317,7 +297,6 @@ TextureImporter:
       mantis_plunge_96x64_4: -8350298164397669779
       mantis_plunge_96x64_5: 1608995243618049695
       mantis_plunge_96x64_6: -5069932624089075237
-      mantis_plunge_96x64_7: 9054151387244253782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -67,8 +67,14 @@ public class PlayerHealth : MonoBehaviour
     public void PlayerTakeDamage(int damage)
 
     {
+        if(IsDead)
+        {
+            return;
+        }
+
         if (isInvincible) return;
         health -= damage;
+        anim.SetTrigger("takeDmg");
         rb.linearVelocity = Vector2.up * 5f; // Knockback effect
         UpdateHeartUI();
 
@@ -76,14 +82,16 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
 
         {
-            if(IsDead)
-            {
-                return;
-            }
 
             Debug.Log("Player is dead.");
             IsDead = true;
             playerMovement.canMove = false;
+            playerMovement.StopAllCoroutines();
+            rb.linearVelocity = Vector2.zero;
+            rb.gravityScale = 1f;
+
+            anim.SetBool("isDead", true);
+            anim.ResetTrigger("takeDmg");
             anim.SetTrigger("Die");
 
             rb.linearVelocity = Vector2.zero;

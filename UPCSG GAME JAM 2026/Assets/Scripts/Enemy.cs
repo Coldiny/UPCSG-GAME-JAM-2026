@@ -5,7 +5,7 @@ using static System.Net.WebRequestMethods;
 public class Enemy : MonoBehaviour, IAttackable
 {
     [Header("References")] 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Collider2D col;
     public Transform player; 
     public LayerMask groundLayer;
@@ -76,6 +76,7 @@ public class Enemy : MonoBehaviour, IAttackable
     }
     void Update()
     {
+
         // Determine the distance between enemy and player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
@@ -134,7 +135,7 @@ public class Enemy : MonoBehaviour, IAttackable
         spriteRenderer.color = Color.Lerp(spriteRenderer.color, targetColor, Time.deltaTime * colorLerpSpeed);
 
         // Patrol target switching
-        if (!isChasing && Vector2.Distance(transform.position, currentTarget.position) < 0.2f)
+        if (!isChasing && Vector2.Distance(transform.position, currentTarget.position) < 0.5f)
         {
             currentTarget = currentTarget == patrolPointA ? patrolPointB : patrolPointA;
         }
@@ -153,6 +154,8 @@ public class Enemy : MonoBehaviour, IAttackable
         // isGrounded?
         Vector2 feetPos = new Vector2(col.bounds.center.x, col.bounds.min.y); // so we can locate feet
         isGrounded = Physics2D.Raycast(feetPos, Vector2.down, 0.05f, groundLayer);
+
+        
 
         // DEBUG
         Debug.DrawRay(feetPos, Vector2.down * 0.05f, Color.yellow); // isGrounded
@@ -188,7 +191,7 @@ public class Enemy : MonoBehaviour, IAttackable
         health -= damage;
         Debug.Log("Enemy took " + damage + " damage. Remaining health: " + health);
 
-        anim.SetBool("isHurt", true);
+        anim.SetTrigger("takeDmg");
 
         if (health <= 0)
         {

@@ -6,6 +6,7 @@ public class EnemyMeleeAttack : MonoBehaviour
     [Header("References")]
     public Transform attackPoint;
     Enemy enemy;
+    Animator anim;
 
     [Header("Melee Settings")]
     public float attackRadius = 0.8f;
@@ -16,11 +17,14 @@ public class EnemyMeleeAttack : MonoBehaviour
     private float nextAttackTime;
     public bool isAttacking { get; private set; }
 
+    public bool useAnimationEvents = false;
+
     // Update is called once per frame
 
     private void Start()
     {
         enemy = GetComponent<Enemy>();
+        anim = GetComponent<Animator>();
     }
 
     public void tryMelee()
@@ -40,24 +44,37 @@ public class EnemyMeleeAttack : MonoBehaviour
             return;
         }
 
-        StartCoroutine(MeleeRoutine());
+        isAttacking = true;
+        nextAttackTime = Time.time + attackCooldown; // ATTACK cooldown, cause I was doin hit cooldown before :<
+        anim.SetTrigger("Attack");
+
+        if(!useAnimationEvents)
+        {
+            StartCoroutine(MeleeRoutine()); // simple enemies (AKA NO COMBOS LIKE MANTIS AAAAAAAAAAAAAAAAAAAAAAA)
+        }
+        
     }
 
     private IEnumerator MeleeRoutine()
     {
-        isAttacking = true;
-
         yield return new WaitForSeconds(windUpTime);
+        DoHit();
+        yield return new WaitForSeconds(0.2f);
+        isAttacking = false;
+    }
 
+    public void DoHit()
+    {
         Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, attackRadius, LayerMask.GetMask("Player"));
 
         if (hit != null)
         {
             hit.GetComponent<PlayerHealth>()?.PlayerTakeDamage(damage); // the ? is not me losing my mind, it makes it null if no PlayerHealth is found = no crash
         }
+    }
 
-        float remainingCooldown = Mathf.Max(0, attackCooldown - windUpTime);
-        yield return new WaitForSeconds(remainingCooldown);
+    public void EndMelee()
+    {
         isAttacking = false;
     }
 

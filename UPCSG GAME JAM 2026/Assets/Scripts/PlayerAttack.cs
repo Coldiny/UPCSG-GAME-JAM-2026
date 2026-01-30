@@ -6,6 +6,7 @@ public class PlayerAttack : MonoBehaviour
     [Header("References")]
     public Transform attackPos;
     PlayerHealth playerHealth;
+    Animator anim;
 
     [Header("Abilities")]
     public bool canMAttack = false;
@@ -23,6 +24,7 @@ public class PlayerAttack : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         playerHealth = GetComponent<PlayerHealth>();
+        anim = GetComponent<Animator>();
     }
 
     public void Update()
@@ -49,6 +51,7 @@ public class PlayerAttack : MonoBehaviour
     {
         Debug.Log("Attack!");
         AudioManager.Instance.Play("Attack");
+        anim.SetTrigger("Attack");
 
         // 1. Detect enemies
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);

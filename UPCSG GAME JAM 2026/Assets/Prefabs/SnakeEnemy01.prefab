@@ -88,9 +88,9 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.990566, g: 0, b: 0, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: 4455864848015989277, guid: d0403429020f7bf44b33e9abd35cbc03, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -132,8 +132,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: -0.11076355, y: -0.062027097}
+  m_Radius: 0.5177226
 --- !u!50 &4510115242488392175
 Rigidbody2D:
   serializedVersion: 5
@@ -178,17 +178,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   anim: {fileID: 0}
-  health: 5
-  speed: 2
+  health: 3
+  speed: 6
   Edamage: 1
   detectionRange: 8
   attackRange: 2
   attackExitRange: 3
   isGrounded: 0
-  normalColor: {r: 1, g: 0, b: 0, a: 1}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
   attackColor: {r: 1, g: 1, b: 1, a: 1}
   normalAlpha: 1
-  attackAlpha: 0.5
+  attackAlpha: 1
   colorLerpSpeed: 6
   patrolPointA: {fileID: 0}
   patrolPointB: {fileID: 0}
@@ -217,6 +217,7 @@ MonoBehaviour:
   damage: 1
   attackCooldown: 1
   windUpTime: 0.15
+  useAnimationEvents: 0
 --- !u!114 &2013070808169074733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +280,7 @@ Transform:
   m_GameObject: {fileID: 4681347887192894482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0, z: 0}
+  m_LocalPosition: {x: 0.26, y: 0.027, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

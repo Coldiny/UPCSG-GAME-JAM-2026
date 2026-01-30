@@ -115,12 +115,12 @@ TextureImporter:
       name: croc_dmg_96x64_0
       rect:
         serializedVersion: 2
-        x: 18
+        x: 0
         y: 0
-        width: 70
-        height: 43
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -137,12 +137,12 @@ TextureImporter:
       name: croc_dmg_96x64_1
       rect:
         serializedVersion: 2
-        x: 116
+        x: 96
         y: 0
-        width: 70
-        height: 43
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: croc_dmg_96x64_2
       rect:
         serializedVersion: 2
-        x: 210
+        x: 192
         y: 0
-        width: 71
-        height: 44
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: croc_dmg_96x64_3
       rect:
         serializedVersion: 2
-        x: 308
+        x: 288
         y: 0
-        width: 72
-        height: 45
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: croc_dmg_96x64_4
       rect:
         serializedVersion: 2
-        x: 402
+        x: 384
         y: 0
-        width: 70
-        height: 43
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: da9398df7bbc99e448fad86fee8da6ab
     internalID: 0
     vertices: []
     indices: 
@@ -233,7 +233,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       croc_dmg_96x64_0: -4167578120017454344
       croc_dmg_96x64_1: -4211682968009317719

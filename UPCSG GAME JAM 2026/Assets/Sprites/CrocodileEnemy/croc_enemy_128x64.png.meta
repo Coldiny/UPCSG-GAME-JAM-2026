@@ -136,12 +136,12 @@ TextureImporter:
       name: croc_enemy_128x64_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 0
-        width: 86
-        height: 36
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -158,12 +158,12 @@ TextureImporter:
       name: croc_enemy_128x64_1
       rect:
         serializedVersion: 2
-        x: 151
+        x: 128
         y: 0
-        width: 86
-        height: 34
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -180,12 +180,12 @@ TextureImporter:
       name: croc_enemy_128x64_2
       rect:
         serializedVersion: 2
-        x: 279
+        x: 256
         y: 0
-        width: 86
-        height: 37
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: croc_enemy_128x64_3
       rect:
         serializedVersion: 2
-        x: 397
+        x: 384
         y: 0
-        width: 96
-        height: 27
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: croc_enemy_128x64_4
       rect:
         serializedVersion: 2
-        x: 399
-        y: 22
-        width: 6
-        height: 6
+        x: 512
+        y: 0
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -246,12 +246,12 @@ TextureImporter:
       name: croc_enemy_128x64_5
       rect:
         serializedVersion: 2
-        x: 532
+        x: 640
         y: 0
-        width: 89
-        height: 27
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: croc_enemy_128x64_6
       rect:
         serializedVersion: 2
-        x: 660
+        x: 768
         y: 0
-        width: 89
-        height: 27
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: croc_enemy_128x64_7
       rect:
         serializedVersion: 2
-        x: 777
+        x: 896
         y: 0
-        width: 100
-        height: 28
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: croc_enemy_128x64_8
       rect:
         serializedVersion: 2
-        x: 919
+        x: 1024
         y: 0
-        width: 86
-        height: 34
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -330,77 +330,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: croc_enemy_128x64_9
-      rect:
-        serializedVersion: 2
-        x: 1047
-        y: 0
-        width: 86
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 987d62aead65c5eb0800000000000000
-      internalID: -4729810010414590071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: croc_enemy_128x64_10
-      rect:
-        serializedVersion: 2
-        x: 521
-        y: 12
-        width: 11
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 136171b0dc063b6d0800000000000000
-      internalID: -2975928494991141327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: croc_enemy_128x64_11
-      rect:
-        serializedVersion: 2
-        x: 651
-        y: 10
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24ee596de5f1e8ff0800000000000000
-      internalID: -32053655157477822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dd15a18437442494da1f55d8d60a0ebf
     internalID: 0
     vertices: []
     indices: 
@@ -408,12 +342,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       croc_enemy_128x64_0: 4759492816446750232
       croc_enemy_128x64_1: 3145938494195064713
-      croc_enemy_128x64_10: -2975928494991141327
-      croc_enemy_128x64_11: -32053655157477822
       croc_enemy_128x64_2: 8867235875926853149
       croc_enemy_128x64_3: 1613443841022865337
       croc_enemy_128x64_4: -8155144903687089813
@@ -421,7 +355,6 @@ TextureImporter:
       croc_enemy_128x64_6: 6541213978739017772
       croc_enemy_128x64_7: -5621008382389761190
       croc_enemy_128x64_8: 173047041838659241
-      croc_enemy_128x64_9: -4729810010414590071
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

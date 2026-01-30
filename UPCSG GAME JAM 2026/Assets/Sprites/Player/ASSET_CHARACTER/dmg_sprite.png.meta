@@ -115,19 +115,19 @@ TextureImporter:
       name: dmg_sprite_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 20
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ef8796c2b79a8a910800000000000000
+      spriteID: 7045878f3ca789040a395f61083fb8a6
       internalID: 1848913993526769918
       vertices: []
       indices: 
@@ -137,19 +137,19 @@ TextureImporter:
       name: dmg_sprite_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 32
         y: 0
-        width: 20
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b4e9eca0adf188380800000000000000
+      spriteID: 2c3cc990527b5e1488e1db9364efcbfe
       internalID: -8968883636563698101
       vertices: []
       indices: 
@@ -159,19 +159,19 @@ TextureImporter:
       name: dmg_sprite_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 64
         y: 0
-        width: 20
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 45bb3ca43c0d1da50800000000000000
+      spriteID: f822f615b77daa5479e1ec9863dd0ae2
       internalID: 6544241270737582932
       vertices: []
       indices: 
@@ -181,19 +181,19 @@ TextureImporter:
       name: dmg_sprite_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 96
         y: 0
-        width: 20
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9fa28de2c20ae1a30800000000000000
+      spriteID: 0b2d8b09ec2601d49b420a7277f708c4
       internalID: 4187960815126063865
       vertices: []
       indices: 
@@ -203,19 +203,19 @@ TextureImporter:
       name: dmg_sprite_4
       rect:
         serializedVersion: 2
-        x: 134
+        x: 128
         y: 0
-        width: 20
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e431fdef3bbff5b80800000000000000
+      spriteID: 712506e9a451ab0469ed94d6c8a92335
       internalID: -8403721629156306098
       vertices: []
       indices: 
@@ -225,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 007ff8a7143288f4f97066e9767e6f75
     internalID: 0
     vertices: []
     indices: 
@@ -233,7 +233,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       dmg_sprite_0: 1848913993526769918
       dmg_sprite_1: -8968883636563698101

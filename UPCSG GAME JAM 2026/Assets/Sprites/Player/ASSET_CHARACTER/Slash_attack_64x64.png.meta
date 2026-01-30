@@ -121,12 +121,12 @@ TextureImporter:
       name: Slash_attack_64x64_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 25
-        width: 40
-        height: 34
+        x: 0
+        y: 19
+        width: 64
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,12 +143,12 @@ TextureImporter:
       name: Slash_attack_64x64_1
       rect:
         serializedVersion: 2
-        x: 68
-        y: 25
-        width: 40
-        height: 34
+        x: 64
+        y: 19
+        width: 64
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Slash_attack_64x64_2
       rect:
         serializedVersion: 2
-        x: 134
-        y: 25
-        width: 39
-        height: 30
+        x: 128
+        y: 19
+        width: 64
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: Slash_attack_64x64_3
       rect:
         serializedVersion: 2
-        x: 198
-        y: 25
-        width: 59
-        height: 30
+        x: 192
+        y: 19
+        width: 64
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: Slash_attack_64x64_4
       rect:
         serializedVersion: 2
-        x: 248
-        y: 40
-        width: 6
-        height: 8
+        x: 256
+        y: 19
+        width: 64
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -227,55 +227,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Slash_attack_64x64_5
-      rect:
-        serializedVersion: 2
-        x: 262
-        y: 25
-        width: 42
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04e5762badf3d1c20800000000000000
-      internalID: 3178767120521977408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_attack_64x64_6
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 31
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6e70d5762627da270800000000000000
-      internalID: 8263386658261239782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0d58a5da2d0707045a1d2f097ee27c9a
     internalID: 0
     vertices: []
     indices: 
@@ -283,15 +239,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Slash_attack_64x64_0: 5451330176471285701
       Slash_attack_64x64_1: 1250236833365767115
       Slash_attack_64x64_2: -1402332073135373312
       Slash_attack_64x64_3: 8238131768440948496
       Slash_attack_64x64_4: 2555394262069911712
-      Slash_attack_64x64_5: 3178767120521977408
-      Slash_attack_64x64_6: 8263386658261239782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &41518837236627266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7141615567622919788}
+  - component: {fileID: 5374500104357196457}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7141615567622919788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41518837236627266}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.92526, y: 2.06046, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5374500104357196457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41518837236627266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc373292379e174da047f3709254e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  sounds:
+  - name: Jump
+    clip: {fileID: 8300000, guid: 180361e9991800348831ec7ab834c0fc, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Attack
+    clip: {fileID: 8300000, guid: a20b4632c61b18b48a2b9f7417adb395, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Dash
+    clip: {fileID: 8300000, guid: a46dd403e64bf2d40a8407a3567c32f8, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Walk1
+    clip: {fileID: 8300000, guid: c92ce812bf216b5499577c3a0f0a7f97, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Walk2
+    clip: {fileID: 8300000, guid: 8dc3f86f57dd5e045b188c814b62c9ff, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Run1
+    clip: {fileID: 8300000, guid: 25ccfba9a6e844746aa8fb06ed6c21b1, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Run2
+    clip: {fileID: 8300000, guid: efd80491512268b47a2b3ad6788f593a, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
