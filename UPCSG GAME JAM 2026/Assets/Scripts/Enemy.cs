@@ -53,6 +53,11 @@ public class Enemy : MonoBehaviour, IAttackable
     [Header("Status Effects")]
     public bool isFeared;
 
+    [Header("Item Dependency")]
+    public BoolItemSO requiredItem;
+    public bool hostileWithoutItem = true;
+
+
     public enum EnemyState
     {
         Patrol,
@@ -77,6 +82,9 @@ public class Enemy : MonoBehaviour, IAttackable
     void Update()
     {
 
+        Debug.Log($"{name} item state: {requiredItem?.value}");
+
+
         // Determine the distance between enemy and player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
@@ -91,7 +99,13 @@ public class Enemy : MonoBehaviour, IAttackable
         // Adding a bit extra range for attack, so that exiting attack range wont immediately stop attack state
         // Decide state
 
-        if (isFeared)
+        // If enemy depends on an item and player has it → force passive
+        if (requiredItem != null && requiredItem.value)
+        {
+            currentState = EnemyState.Patrol;
+            isChasing = false;
+        }
+        else if (isFeared)
         {
             currentState = EnemyState.Patrol;
         }
@@ -120,6 +134,7 @@ public class Enemy : MonoBehaviour, IAttackable
                 }
             }
         }
+
 
         // Change color and alpha depending on state
         Color targetColor;
@@ -222,7 +237,7 @@ public class Enemy : MonoBehaviour, IAttackable
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // 1. Check if we hit the Player
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && currentState == EnemyState.Attack)
         {
             Debug.Log("Enemy collided with Player!");
 
