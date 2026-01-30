@@ -18,6 +18,11 @@ public class CrystalLight : MonoBehaviour, IAttackable
     bool isLit;
     float lightEndTime;
 
+    [Header("Light Receivers")]
+    public MonoBehaviour[] receivers;
+
+    ILightReceiver[] lightReceivers;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,6 +40,13 @@ public class CrystalLight : MonoBehaviour, IAttackable
         if(lightZone != null)
         {
             lightZone.SetActive(false);
+        }
+
+        lightReceivers = new ILightReceiver[receivers.Length];
+
+        for(int i = 0; i < receivers.Length; i++)
+        {
+            lightReceivers[i] = receivers[i] as ILightReceiver;
         }
     }
 
@@ -81,6 +93,12 @@ public class CrystalLight : MonoBehaviour, IAttackable
             light2D.intensity = lightIntensityOn;
             lightZone.SetActive(true);
         }
+
+        foreach (var r in lightReceivers)
+        {
+            r?.OnlightOn();
+        }
+
     }
 
     void TurnOff()
@@ -94,6 +112,11 @@ public class CrystalLight : MonoBehaviour, IAttackable
             Debug.Log("Turn Off");
             light2D.intensity = lightIntensityOff;
             lightZone.SetActive(false);
+        }
+
+        foreach (var r in lightReceivers)
+        {
+            r?.OnlightOff();
         }
     }
 }

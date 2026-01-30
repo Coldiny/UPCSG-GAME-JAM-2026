@@ -14,6 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutorialAreaTemplate.unity
     guid: bd698d6060d565e4a9a8fe8cc28906aa
+  - enabled: 1
+    path: Assets/Scenes/Swamp.unity
+    guid: 8871113f4b138bb41934299bfa3af18d
+  - enabled: 1
+    path: Assets/Scenes/Crystal Cave.unity
+    guid: c24eb3f98bb94924e80447bb106d7077
+  - enabled: 1
+    path: Assets/Scenes/Fields.unity
+    guid: bf69e909b2be3044c8bfb9239b606c49
+  - enabled: 1
+    path: Assets/Scenes/BossFight.unity
+    guid: 3c02198c6fdf21444be8938683d8f313
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: fcb38d99c38b9f04aa42f10c103213d4, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -252,7 +252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19e233c5816bb954d996cf1e14dedd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  routeText: {fileID: 0}
+  routeText: {fileID: 4658093648956981637}
+  gameOverUI: {fileID: 7083205240013630632}
 --- !u!1 &2651903967313434465
 GameObject:
   m_ObjectHideFlags: 0
