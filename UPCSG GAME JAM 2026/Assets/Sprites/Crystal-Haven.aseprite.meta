@@ -1,0 +1,1058 @@
+fileFormatVersion: 2
+guid: f2f31f13d8996be419bbe85305c3994a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 32
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 2
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
+  asepriteImporterSettings:
+    fileImportMode: 2
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 639054078716909792
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Crystal-Haven
+    originalName: 
+    pivot: {x: 0.4, y: -0.72115386}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 640
+      height: 312
+    spriteID: 0b996812ac48ff546b57f585eb2163ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  spriteSheetImportData: []
+  tileSetImportData:
+  - name: Plat1
+    originalName: 
+    pivot: {x: 1.2132702, y: 2.2260869}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 117
+      width: 211
+      height: 115
+    spriteID: 6df8273e27b8be24f9cec463d16de157
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 117}
+  - name: Crystals
+    originalName: 
+    pivot: {x: 2, y: 4.0634923}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 300
+      y: 402
+      width: 128
+      height: 63
+    spriteID: b4336252940c2004e8c0ae88fe87f2b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 300, y: 402}
+  - name: Crystal Platform
+    originalName: 
+    pivot: {x: 1.6, y: 4.0634923}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 300
+      y: 240
+      width: 160
+      height: 63
+    spriteID: a6262269a1996654cab036aa23b75754
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 300, y: 240}
+  - name: Dripstone
+    originalName: 
+    pivot: {x: 3.1604939, y: 8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 223
+      y: 157
+      width: 81
+      height: 32
+    spriteID: 5f1aa65d306681843bd8672c071cea42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 223, y: 157}
+  - name: Side
+    originalName: 
+    pivot: {x: 2, y: 2.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 313
+      y: 4
+      width: 128
+      height: 96
+    spriteID: 210e7829791b3e0428fd468eaff09ac2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 313, y: 4}
+  - name: Floor1
+    originalName: 
+    pivot: {x: 4, y: 8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 402
+      width: 64
+      height: 32
+    spriteID: a1f1c6f2e7cb5f7418dadb3f96893bf3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 402}
+  - name: Floor2
+    originalName: 
+    pivot: {x: 8, y: 8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 468
+      y: 280
+      width: 32
+      height: 32
+    spriteID: 708ecbfdabaf4cc409c3c03b89ba2c07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 468, y: 280}
+  - name: Floor 4
+    originalName: 
+    pivot: {x: 8, y: 8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 449
+      y: 4
+      width: 32
+      height: 32
+    spriteID: 40834a02e2c621543accadd0b903173d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 449, y: 4}
+  - name: Floor5
+    originalName: 
+    pivot: {x: 6.095238, y: 8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 442
+      width: 42
+      height: 32
+    spriteID: d9ed05d90a63e5f469581a4d8f57405b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 442}
+  - name: Side1
+    originalName: 
+    pivot: {x: 2, y: 2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 483
+      width: 128
+      height: 128
+    spriteID: dca9ac1aab076064480203bf14592356
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 483}
+  - name: Floor2_1
+    originalName: 
+    pivot: {x: 1, y: 8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 223
+      y: 117
+      width: 256
+      height: 32
+    spriteID: 5e71d6247e6992b49bfa258694ba1d32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 223, y: 117}
+  - name: Floor4
+    originalName: 
+    pivot: {x: 7.529412, y: 8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 468
+      y: 240
+      width: 34
+      height: 32
+    spriteID: 9b0dec05a0acd734bae37fc7e18cf911
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 468, y: 240}
+  - name: Slope
+    originalName: 
+    pivot: {x: 0.8888889, y: 3.5068493}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 240
+      width: 288
+      height: 73
+    spriteID: 3ed218abf16c3c44482c42580b91a3d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 240}
+  - name: Slope_1
+    originalName: 
+    pivot: {x: 0.8888889, y: 3.5068493}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 321
+      width: 288
+      height: 73
+    spriteID: 97965997ff07ec14cbdc4b2e4a266453
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 321}
+  - name: Slope_2
+    originalName: 
+    pivot: {x: 0.8888889, y: 3.5068493}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 402
+      width: 288
+      height: 73
+    spriteID: 4bfb1bafcb34fdb4b8b26ecb197da03f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 402}
+  - name: Slope_3
+    originalName: 
+    pivot: {x: 0.8504983, y: 2.4380953}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 301
+      height: 105
+    spriteID: d73c0c8ebce4ff14c8902e8fef8c7c58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Background
+    originalName: 
+    pivot: {x: 1.3333334, y: 5.3333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 300
+      y: 321
+      width: 192
+      height: 48
+    spriteID: bccd799fe0563d246b0b34ec9ed36536
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 300, y: 321}
+  asepriteLayers:
+  - layerIndex: 1
+    uuid:
+      value0: 616813724
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Crystal Haven
+    layerFlags: 3
+    layerType: 1
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: -1
+  - layerIndex: 2
+    uuid:
+      value0: 693259173
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Platforms
+    layerFlags: 3
+    layerType: 1
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 1
+  - layerIndex: 3
+    uuid:
+      value0: 4136094096
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Plat1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Plat1
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 45
+        y: 256
+        width: 211
+        height: 115
+      spriteId: 6df8273e27b8be24f9cec463d16de157
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 2
+  - layerIndex: 4
+    uuid:
+      value0: 1609377771
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Crystals
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Crystals
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 224
+        y: 225
+        width: 128
+        height: 63
+      spriteId: b4336252940c2004e8c0ae88fe87f2b6
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 2
+  - layerIndex: 5
+    uuid:
+      value0: 3424495403
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Crystal Platform
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Crystal Platform
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 192
+        y: 225
+        width: 160
+        height: 63
+      spriteId: a6262269a1996654cab036aa23b75754
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 2
+  - layerIndex: 6
+    uuid:
+      value0: 4177599876
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Dripstone
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Dripstone
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 105
+        y: 256
+        width: 81
+        height: 32
+      spriteId: 5f1aa65d306681843bd8672c071cea42
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 2
+  - layerIndex: 7
+    uuid:
+      value0: 293876107
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Rock FLoors
+    layerFlags: 35
+    layerType: 1
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 1
+  - layerIndex: 8
+    uuid:
+      value0: 154438779
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Side
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Side
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 384
+        width: 128
+        height: 96
+      spriteId: 210e7829791b3e0428fd468eaff09ac2
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 7
+  - layerIndex: 9
+    uuid:
+      value0: 2258914601
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Floor1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Floor1
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 480
+        width: 64
+        height: 32
+      spriteId: a1f1c6f2e7cb5f7418dadb3f96893bf3
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 7
+  - layerIndex: 10
+    uuid:
+      value0: 2662199128
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Floor2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Floor2
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      spriteId: 708ecbfdabaf4cc409c3c03b89ba2c07
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 7
+  - layerIndex: 11
+    uuid:
+      value0: 2167882922
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Floor 4
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Floor 4
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      spriteId: 40834a02e2c621543accadd0b903173d
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 7
+  - layerIndex: 12
+    uuid:
+      value0: 289546133
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Floor5
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Floor5
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 160
+        y: 480
+        width: 42
+        height: 32
+      spriteId: d9ed05d90a63e5f469581a4d8f57405b
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 7
+  - layerIndex: 13
+    uuid:
+      value0: 3249411210
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Side1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Side1
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 384
+        width: 128
+        height: 128
+      spriteId: dca9ac1aab076064480203bf14592356
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 7
+  - layerIndex: 14
+    uuid:
+      value0: 1099602024
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Floor2_1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Floor2_1
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 256
+        y: 416
+        width: 256
+        height: 32
+      spriteId: 5e71d6247e6992b49bfa258694ba1d32
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 7
+  - layerIndex: 15
+    uuid:
+      value0: 1110247911
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Transition
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 7
+  - layerIndex: 16
+    uuid:
+      value0: 1855630074
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Floor4
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Floor4
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 480
+        width: 34
+        height: 32
+      spriteId: 9b0dec05a0acd734bae37fc7e18cf911
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 7
+  - layerIndex: 17
+    uuid:
+      value0: 1971043315
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Slopes
+    layerFlags: 35
+    layerType: 1
+    blendMode: 0
+    cells: []
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 1
+  - layerIndex: 18
+    uuid:
+      value0: 103234741
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Slope
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Slope
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 320
+        y: 448
+        width: 288
+        height: 73
+      spriteId: 3ed218abf16c3c44482c42580b91a3d9
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 17
+  - layerIndex: 19
+    uuid:
+      value0: 2815245295
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Slope_1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Slope_1
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 352
+        y: 464
+        width: 288
+        height: 73
+      spriteId: 97965997ff07ec14cbdc4b2e4a266453
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 17
+  - layerIndex: 20
+    uuid:
+      value0: 86361940
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Slope_2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Slope_2
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 288
+        y: 432
+        width: 288
+        height: 73
+      spriteId: 4bfb1bafcb34fdb4b8b26ecb197da03f
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 17
+  - layerIndex: 21
+    uuid:
+      value0: 1652445881
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Slope_3
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Slope_3
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 179
+        y: 432
+        width: 301
+        height: 105
+      spriteId: d73c0c8ebce4ff14c8902e8fef8c7c58
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 17
+  - layerIndex: 22
+    uuid:
+      value0: 1457883046
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: Background
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Background
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 288
+        y: 416
+        width: 192
+        height: 48
+      spriteId: bccd799fe0563d246b0b34ec9ed36536
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: 17
+  tileSets: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 512, y: 512}
+  previousTextureSize: {x: 512, y: 1024}
