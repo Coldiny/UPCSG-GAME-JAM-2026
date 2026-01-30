@@ -5,6 +5,7 @@ public class PlayerAttack : MonoBehaviour
 {
     [Header("References")]
     public Transform attackPos;
+    PlayerHealth playerHealth;
 
     [Header("Abilities")]
     public bool canMAttack = false;
@@ -21,10 +22,16 @@ public class PlayerAttack : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     public void Update()
     {
+        if(playerHealth.IsDead)
+        {
+            return;
+        }
+
         if (timeBtwAttack <= 0 && canMAttack)
         {
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)

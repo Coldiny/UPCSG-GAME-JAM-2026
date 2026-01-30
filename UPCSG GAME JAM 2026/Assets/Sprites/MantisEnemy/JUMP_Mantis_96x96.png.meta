@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 620650cf48778664c86cf770cc72c3c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1433151210971241612
+    second: JUMP_Mantis_96x96_0
+  - first:
+      213: -6086769061601827085
+    second: JUMP_Mantis_96x96_1
+  - first:
+      213: 6091627158199435016
+    second: JUMP_Mantis_96x96_2
+  - first:
+      213: -3455022267523588390
+    second: JUMP_Mantis_96x96_3
+  - first:
+      213: 4327777015715880266
+    second: JUMP_Mantis_96x96_4
+  - first:
+      213: -8147677644744729007
+    second: JUMP_Mantis_96x96_5
+  - first:
+      213: 2477456103287608179
+    second: JUMP_Mantis_96x96_6
+  - first:
+      213: -4156554807985889011
+    second: JUMP_Mantis_96x96_7
+  - first:
+      213: 4098743445541865227
+    second: JUMP_Mantis_96x96_8
+  - first:
+      213: 8259053752821505057
+    second: JUMP_Mantis_96x96_9
+  - first:
+      213: 4413720666361131198
+    second: JUMP_Mantis_96x96_10
+  - first:
+      213: -1517218626366398681
+    second: JUMP_Mantis_96x96_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 9
+        width: 67
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47363a8119c6c1ce0800000000000000
+      internalID: -1433151210971241612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 9
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6a26d99c3778ba0800000000000000
+      internalID: -6086769061601827085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 7
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f799420aec98450800000000000000
+      internalID: 6091627158199435016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_3
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 15
+        width: 56
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade113d9d8b4d00d0800000000000000
+      internalID: -3455022267523588390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_4
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 12
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d58d8244a5f0c30800000000000000
+      internalID: 4327777015715880266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_5
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e5990b952adee80800000000000000
+      internalID: -8147677644744729007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_6
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 17
+        width: 54
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373d4172331b16220800000000000000
+      internalID: 2477456103287608179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_7
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 12
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d012f8cac63f056c0800000000000000
+      internalID: -4156554807985889011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_8
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 16
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07cbf89279a1e830800000000000000
+      internalID: 4098743445541865227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_9
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 11
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c58cd31ad0e9270800000000000000
+      internalID: 8259053752821505057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_10
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 10
+        width: 54
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb07148af8fa04d30800000000000000
+      internalID: 4413720666361131198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_Mantis_96x96_11
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 17
+        width: 54
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f13d8a2b1c1fae0800000000000000
+      internalID: -1517218626366398681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      JUMP_Mantis_96x96_0: -1433151210971241612
+      JUMP_Mantis_96x96_1: -6086769061601827085
+      JUMP_Mantis_96x96_10: 4413720666361131198
+      JUMP_Mantis_96x96_11: -1517218626366398681
+      JUMP_Mantis_96x96_2: 6091627158199435016
+      JUMP_Mantis_96x96_3: -3455022267523588390
+      JUMP_Mantis_96x96_4: 4327777015715880266
+      JUMP_Mantis_96x96_5: -8147677644744729007
+      JUMP_Mantis_96x96_6: 2477456103287608179
+      JUMP_Mantis_96x96_7: -4156554807985889011
+      JUMP_Mantis_96x96_8: 4098743445541865227
+      JUMP_Mantis_96x96_9: 8259053752821505057
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

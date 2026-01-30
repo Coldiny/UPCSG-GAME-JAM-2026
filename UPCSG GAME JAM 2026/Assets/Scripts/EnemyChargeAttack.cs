@@ -9,16 +9,13 @@ public class EnemyChargeAttack : MonoBehaviour
 
     [Header("Charge Settings")]
     public float chargeMoveSpeed = 12f;
-    public float chargeDuration;
+    public float chargeDuration = 0.5f;
     public float chargeCooldown = 2f;
     public float windUpTime = 0.25f;
 
-    float chargeTimer;
-    bool isCharging;
     float nextChargeTime;
     public bool isAttacking { get; private set; }
     
-
     float chargeDirection;
 
     private void Start()
@@ -60,23 +57,18 @@ public class EnemyChargeAttack : MonoBehaviour
 
         float timer = chargeDuration;
 
-        
-
-        if (isAttacking)
+        // CHARGE FORWARD
+        while(timer > 0f)
         {
             timer -= Time.deltaTime;
-
-            // if charging done, GO CHARGE
-            if(timer <= 0f)
-            {
-                rb.linearVelocity = new Vector2(chargeDirection * chargeMoveSpeed, rb.linearVelocity.y);
-                yield return new WaitForSeconds(0.2f);
-                isAttacking = false;
-            }
-            
-            
-            
+            rb.linearVelocity = new Vector2(chargeDirection * chargeMoveSpeed, rb.linearVelocity.y);
+            yield return null;
         }
+
+        // ok stop that charge
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+
+        isAttacking = false;
 
         
     }

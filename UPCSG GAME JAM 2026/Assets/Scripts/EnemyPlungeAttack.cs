@@ -88,20 +88,31 @@ public class EnemyPlungeAttack : MonoBehaviour
         isAttacking = true;
         nextPlungeTime = Time.time + plungeCooldown;
 
-        // PLUS ULTRA JUMPPPPPPPPPPP
+        // no other linear movement, AND  PLUS ULTRA JUMPPPPPPPPPPP
+        Debug.Log("JUMP");
+        rb.linearVelocity = Vector2.zero;
         rb.AddForce(Vector2.up * plungeJumpForce, ForceMode2D.Impulse);
 
+        Debug.Log("AURA");
         // aura farm in the air for a moment
         yield return new WaitForSeconds(hangTime);
 
-        // normalized makes it not go over 1 (all i know is it makes sure diagonal doesnt get more movement speed
-        Vector2 direction = (enemy.player.position - transform.position).normalized;
+        //float horizontalDir = Mathf.Sign(enemy.player.position.x - transform.position.x) * 0.5f;
 
-        // no other linear movement, AND SMAAAAAAAAAASH
-        rb.linearVelocity = Vector2.zero;
+        Vector2 direction = (enemy.player.position - transform.position).normalized;
+        direction.x *= 0.5f;
+        direction.y = -1f;
+
+
+        Debug.Log("SMASH");
+        // SMAAAAAAAAAASH
+        //rb.linearVelocity = new Vector2(horizontalDir * plungeForce, -plungeForce);
+
         rb.AddForce(direction * plungeForce, ForceMode2D.Impulse);
 
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitUntil(() => enemy.isGrounded);
+
+        rb.linearVelocity = Vector2.zero;
         isAttacking = false;
     }
 }

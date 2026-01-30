@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 77348bf6e72abaf47890dba6191d64b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3328536270699034215
+    second: Mantis_enemy_96x64_0
+  - first:
+      213: 5388091423864252757
+    second: Mantis_enemy_96x64_1
+  - first:
+      213: -1620833320720083323
+    second: Mantis_enemy_96x64_2
+  - first:
+      213: 5997901461562707670
+    second: Mantis_enemy_96x64_3
+  - first:
+      213: 1375245359979817454
+    second: Mantis_enemy_96x64_4
+  - first:
+      213: -8120202941267208801
+    second: Mantis_enemy_96x64_5
+  - first:
+      213: 4506157975279145782
+    second: Mantis_enemy_96x64_6
+  - first:
+      213: -415803270082949677
+    second: Mantis_enemy_96x64_7
+  - first:
+      213: -7213694841546829681
+    second: Mantis_enemy_96x64_8
+  - first:
+      213: -1369570130224285433
+    second: Mantis_enemy_96x64_9
+  - first:
+      213: 1318124343603813761
+    second: Mantis_enemy_96x64_10
+  - first:
+      213: -1415168482542414846
+    second: Mantis_enemy_96x64_11
+  - first:
+      213: 4694541497428890989
+    second: Mantis_enemy_96x64_12
+  - first:
+      213: -8855894080001742225
+    second: Mantis_enemy_96x64_13
+  - first:
+      213: 6125872516602370202
+    second: Mantis_enemy_96x64_14
+  - first:
+      213: -5268712058939831926
+    second: Mantis_enemy_96x64_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766f4055a16513e20800000000000000
+      internalID: 3328536270699034215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559e1c84a9856ca40800000000000000
+      internalID: 5388091423864252757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586dc5eaea4a189e0800000000000000
+      internalID: -1620833320720083323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_3
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 0
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6decd3ed993dc3350800000000000000
+      internalID: 5997901461562707670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_4
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 0
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9e9985e5ad51310800000000000000
+      internalID: 1375245359979817454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_5
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 0
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f959fa5927e3f4f80800000000000000
+      internalID: -8120202941267208801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_6
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 0
+        width: 66
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6339e4acdc6198e30800000000000000
+      internalID: 4506157975279145782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_7
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 0
+        width: 66
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd824ef025ca3af0800000000000000
+      internalID: -415803270082949677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_8
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 0
+        width: 68
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80988be2cec3eb90800000000000000
+      internalID: -7213694841546829681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_9
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 0
+        width: 69
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709fefc093f4efce0800000000000000
+      internalID: -1369570130224285433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_10
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 0
+        width: 69
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ddc465b1bea4210800000000000000
+      internalID: 1318124343603813761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_11
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 0
+        width: 69
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2041bb453cf4c5ce0800000000000000
+      internalID: -1415168482542414846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_12
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 0
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6554918e9c562140800000000000000
+      internalID: 4694541497428890989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_13
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 0
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ae209314b891580800000000000000
+      internalID: -8855894080001742225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_14
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 0
+        width: 66
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98996bf898730550800000000000000
+      internalID: 6125872516602370202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis_enemy_96x64_15
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 0
+        width: 66
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8903171c46c1e6b0800000000000000
+      internalID: -5268712058939831926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mantis_enemy_96x64_0: 3328536270699034215
+      Mantis_enemy_96x64_1: 5388091423864252757
+      Mantis_enemy_96x64_10: 1318124343603813761
+      Mantis_enemy_96x64_11: -1415168482542414846
+      Mantis_enemy_96x64_12: 4694541497428890989
+      Mantis_enemy_96x64_13: -8855894080001742225
+      Mantis_enemy_96x64_14: 6125872516602370202
+      Mantis_enemy_96x64_15: -5268712058939831926
+      Mantis_enemy_96x64_2: -1620833320720083323
+      Mantis_enemy_96x64_3: 5997901461562707670
+      Mantis_enemy_96x64_4: 1375245359979817454
+      Mantis_enemy_96x64_5: -8120202941267208801
+      Mantis_enemy_96x64_6: 4506157975279145782
+      Mantis_enemy_96x64_7: -415803270082949677
+      Mantis_enemy_96x64_8: -7213694841546829681
+      Mantis_enemy_96x64_9: -1369570130224285433
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

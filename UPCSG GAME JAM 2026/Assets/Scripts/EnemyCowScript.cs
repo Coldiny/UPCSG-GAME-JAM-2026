@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyCowScript : MonoBehaviour
@@ -10,7 +11,7 @@ public class EnemyCowScript : MonoBehaviour
     [Header("Pattern Settings")]
     public int meleeRepeats = 2;
 
-    int meleeCount;
+    bool patternRunning;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,39 +29,27 @@ public class EnemyCowScript : MonoBehaviour
             return;
         }
 
-        if (AnyAttackRunning())
+        if (!patternRunning)
         {
-            return;
+            StartCoroutine(AttackPattern());
         }
-
-        ExecutePattern();
     }
 
-    bool AnyAttackRunning()
+    IEnumerator AttackPattern()
     {
-        if ((melee != null && melee.isAttacking) ||
-           (charge != null && charge.isAttacking))
-        {
-            return true;
-        }
+        patternRunning = true;
 
-        return false;
-    }
-
-    void ExecutePattern()
-    {
-        if (meleeCount < meleeRepeats && melee != null)
+        // MELEE SLASH SLASH
+        for(int i = 0; i < meleeRepeats; i++)
         {
             melee.tryMelee();
-            meleeCount++;
-            return;
+            yield return new WaitUntil(() => !melee.isAttacking);
         }
 
-        if (charge != null)
-        {
-            charge.TryCharge();
-        }
+        // PUSH FORWARD
+        charge.TryCharge();
+        yield return new WaitUntil(() => !charge.isAttacking);
 
-        meleeCount = 0;
+        patternRunning = false;
     }
 }

@@ -60,7 +60,7 @@ public class EnemyFrogScript : MonoBehaviour
 
     private IEnumerator ResetAttackBool()
     {
-        yield return new WaitUntil(() => melee.isAttacking == false);
+        yield return new WaitUntil(() => !melee.isAttacking);
         anim.SetBool("isAttacking", false);
     }
 }

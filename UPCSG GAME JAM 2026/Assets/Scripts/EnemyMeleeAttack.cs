@@ -46,7 +46,6 @@ public class EnemyMeleeAttack : MonoBehaviour
     private IEnumerator MeleeRoutine()
     {
         isAttacking = true;
-        nextAttackTime = Time.time + attackCooldown;
 
         yield return new WaitForSeconds(windUpTime);
 
@@ -55,10 +54,10 @@ public class EnemyMeleeAttack : MonoBehaviour
         if (hit != null)
         {
             hit.GetComponent<PlayerHealth>()?.PlayerTakeDamage(damage); // the ? is not me losing my mind, it makes it null if no PlayerHealth is found = no crash
-            nextAttackTime = Time.time + attackCooldown;
         }
 
-        yield return new WaitForSeconds(0.2f);
+        float remainingCooldown = Mathf.Max(0, attackCooldown - windUpTime);
+        yield return new WaitForSeconds(remainingCooldown);
         isAttacking = false;
     }
 

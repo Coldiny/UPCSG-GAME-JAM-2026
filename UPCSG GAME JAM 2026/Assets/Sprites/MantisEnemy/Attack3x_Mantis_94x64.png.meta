@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 071db8601405aaf449593a31a38e3d1d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5449051760875720588
+    second: Attack3x_Mantis_94x64_0
+  - first:
+      213: -3376711358901025311
+    second: Attack3x_Mantis_94x64_1
+  - first:
+      213: -8524439522120934299
+    second: Attack3x_Mantis_94x64_2
+  - first:
+      213: 8311379079914002535
+    second: Attack3x_Mantis_94x64_3
+  - first:
+      213: -4555207198620117546
+    second: Attack3x_Mantis_94x64_4
+  - first:
+      213: 602373556222332409
+    second: Attack3x_Mantis_94x64_5
+  - first:
+      213: 5841918020405202475
+    second: Attack3x_Mantis_94x64_6
+  - first:
+      213: -1646975277213725866
+    second: Attack3x_Mantis_94x64_7
+  - first:
+      213: -9192211611086140565
+    second: Attack3x_Mantis_94x64_8
+  - first:
+      213: -1835484894970026609
+    second: Attack3x_Mantis_94x64_9
+  - first:
+      213: 9155387092453899139
+    second: Attack3x_Mantis_94x64_10
+  - first:
+      213: -5126167496404353119
+    second: Attack3x_Mantis_94x64_11
+  - first:
+      213: -8782622029320777508
+    second: Attack3x_Mantis_94x64_12
+  - first:
+      213: 3133801729397334490
+    second: Attack3x_Mantis_94x64_13
+  - first:
+      213: -7274029357753055725
+    second: Attack3x_Mantis_94x64_14
+  - first:
+      213: -7629220517248079838
+    second: Attack3x_Mantis_94x64_15
+  - first:
+      213: 2199717796165197992
+    second: Attack3x_Mantis_94x64_16
+  - first:
+      213: -5728005491322135777
+    second: Attack3x_Mantis_94x64_17
+  - first:
+      213: 7894501501108355809
+    second: Attack3x_Mantis_94x64_18
+  - first:
+      213: -3036517101566028713
+    second: Attack3x_Mantis_94x64_19
+  - first:
+      213: 8598668049573798572
+    second: Attack3x_Mantis_94x64_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 0
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47039463b441164b0800000000000000
+      internalID: -5449051760875720588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e58dafd8e28321d0800000000000000
+      internalID: -3376711358901025311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c5ea64b6b13b980800000000000000
+      internalID: -8524439522120934299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_3
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 76
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76813e3dc33f75370800000000000000
+      internalID: 8311379079914002535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_4
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 0
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d512f7ff27a8c0c0800000000000000
+      internalID: -4555207198620117546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_5
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 0
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd88b0de8f0c5800800000000000000
+      internalID: 602373556222332409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_6
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e843ddc79a21150800000000000000
+      internalID: 5841918020405202475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_7
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 0
+        width: 76
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b43df16b4c429e0800000000000000
+      internalID: -1646975277213725866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_8
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 0
+        width: 68
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b4dfcfd34be6080800000000000000
+      internalID: -9192211611086140565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_9
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8567bc763c0786e0800000000000000
+      internalID: -1835484894970026609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_10
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b39e2ad087e0f70800000000000000
+      internalID: 9155387092453899139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_11
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af3aa552d13cd8b0800000000000000
+      internalID: -5126167496404353119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_12
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 0
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd090d1fbcbdd1680800000000000000
+      internalID: -8782622029320777508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_13
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 0
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1ab3db1108d7b20800000000000000
+      internalID: 3133801729397334490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_14
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 0
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316cd5da6d47d0b90800000000000000
+      internalID: -7274029357753055725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_15
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 0
+        width: 76
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2286e446c509f1690800000000000000
+      internalID: -7629220517248079838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_16
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 0
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a028865ea7f68e10800000000000000
+      internalID: 2199717796165197992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_17
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 0
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1bd14a9a590280b0800000000000000
+      internalID: -5728005491322135777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_18
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 0
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e20a54d947ee8d60800000000000000
+      internalID: 7894501501108355809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_19
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 0
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75412c6c8cf1cd5d0800000000000000
+      internalID: -3036517101566028713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3x_Mantis_94x64_20
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 0
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2e85c880b945770800000000000000
+      internalID: 8598668049573798572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Attack3x_Mantis_94x64_0: -5449051760875720588
+      Attack3x_Mantis_94x64_1: -3376711358901025311
+      Attack3x_Mantis_94x64_10: 9155387092453899139
+      Attack3x_Mantis_94x64_11: -5126167496404353119
+      Attack3x_Mantis_94x64_12: -8782622029320777508
+      Attack3x_Mantis_94x64_13: 3133801729397334490
+      Attack3x_Mantis_94x64_14: -7274029357753055725
+      Attack3x_Mantis_94x64_15: -7629220517248079838
+      Attack3x_Mantis_94x64_16: 2199717796165197992
+      Attack3x_Mantis_94x64_17: -5728005491322135777
+      Attack3x_Mantis_94x64_18: 7894501501108355809
+      Attack3x_Mantis_94x64_19: -3036517101566028713
+      Attack3x_Mantis_94x64_2: -8524439522120934299
+      Attack3x_Mantis_94x64_20: 8598668049573798572
+      Attack3x_Mantis_94x64_3: 8311379079914002535
+      Attack3x_Mantis_94x64_4: -4555207198620117546
+      Attack3x_Mantis_94x64_5: 602373556222332409
+      Attack3x_Mantis_94x64_6: 5841918020405202475
+      Attack3x_Mantis_94x64_7: -1646975277213725866
+      Attack3x_Mantis_94x64_8: -9192211611086140565
+      Attack3x_Mantis_94x64_9: -1835484894970026609
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
