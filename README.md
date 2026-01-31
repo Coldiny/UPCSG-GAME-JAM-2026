@@ -1,7 +1,6 @@
 # UPCSG-GAME-JAM-2026
 
-# UPCSG-GAME-JAM-2026
-Game Title: EMBER
+# Game Title: EMBER
 
 The Player has the ability to consume radiance emitted by Sentient Automatons(mobs/enemies) once killed and use their parts to become apart of them.
 
