@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float horizontalMove = 0f;
     [SerializeField] bool jump = false;
     [SerializeField] bool isDashing = false;
-    [SerializeField] bool isSprinting = false;
+    //[SerializeField] bool isSprinting = false;
     private bool dashReady = true; // Renamed from canDash to avoid confusion
 
     private void Start()
@@ -100,13 +100,13 @@ public class PlayerMovement : MonoBehaviour
         // Added 'canSprint' check here in case you want to unlock that too
         if (canSprint && Keyboard.current != null && Keyboard.current.leftShiftKey.isPressed)
         {
-            isSprinting = true;
+            //isSprinting = true;
             CharacterSpeed = 60f;
             anim.SetFloat("Speed", Mathf.Abs(horizontalMove));
         }
         else
         {
-            isSprinting = false;
+            //isSprinting = false;
             CharacterSpeed = defaultSpeed;
         }
 

@@ -1,7 +1,5 @@
 using System.Collections;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using static System.Net.WebRequestMethods;
 public class Enemy : MonoBehaviour, IAttackable
 {
     [Header("References")] 

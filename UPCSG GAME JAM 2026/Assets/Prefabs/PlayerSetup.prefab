@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4076261665132065533}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.33000183, y: 1.8, z: -10}
+  m_LocalPosition: {x: 0.45532227, y: -0.008560061, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -185,8 +185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
   m_ComponentVersion: 1
   m_AssetsPPU: 32
-  m_RefResolutionX: 320
-  m_RefResolutionY: 180
+  m_RefResolutionX: 480
+  m_RefResolutionY: 360
   m_CropFrame: 0
   m_GridSnapping: 0
   m_FilterMode: 0
@@ -414,6 +414,10 @@ PrefabInstance:
       value: GameOverCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 1045846126431452599, guid: aa0433e56632cbc42b85f1f9f408c714, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083205240013630632, guid: aa0433e56632cbc42b85f1f9f408c714, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -695,6 +699,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6588344330153660409}
     m_Modifications:
+    - target: {fileID: 599302929129024947, guid: a36d3e32f9f2d804abc3b98414690239, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 599302929129024947, guid: a36d3e32f9f2d804abc3b98414690239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3346388504936766179, guid: a36d3e32f9f2d804abc3b98414690239, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -775,9 +787,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5254385452633753491, guid: a36d3e32f9f2d804abc3b98414690239, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254385452633753491, guid: a36d3e32f9f2d804abc3b98414690239, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254385452633753491, guid: a36d3e32f9f2d804abc3b98414690239, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7202853743207505346, guid: a36d3e32f9f2d804abc3b98414690239, type: 3}
       propertyPath: m_Name
       value: OptionsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202853743207505346, guid: a36d3e32f9f2d804abc3b98414690239, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
